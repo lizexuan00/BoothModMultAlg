@@ -1,0 +1,1714 @@
+MDF Database:  version 1.0
+MDF_INFO | BoothModMultAlg | XC2C256-6-TQ144
+MACROCELL | 7 | 0 | Product<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | MR<0>  | MP<0>
+INPUTP | 2 | 33 | 17
+EQ | 1 | 
+   Product<0> = MR<0> & MP<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 5 | 1 | Product<10>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | _old_PP_11<10>  | N_PZ_198  | MP<3>  | N_PZ_199  | Maddsub_old_PP_12_addsub0000__or0009  | N_PZ_200  | MR<7>  | MP<4>
+INPUTMC | 5 | 1 | 6 | 8 | 8 | 1 | 15 | 10 | 9 | 1 | 10
+INPUTP | 3 | 34 | 158 | 162
+EQ | 28 | 
+   !Product<10> = !_old_PP_11<10>
+	$ _old_PP_11<10> & !N_PZ_198
+	# _old_PP_11<10> & MP<3> & N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009
+	# _old_PP_11<10> & MP<3> & 
+	!Maddsub_old_PP_12_addsub0000__or0009 & N_PZ_200
+	# _old_PP_11<10> & !MP<3> & N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0009
+	# _old_PP_11<10> & !MP<3> & 
+	Maddsub_old_PP_12_addsub0000__or0009 & N_PZ_200
+	# !_old_PP_11<10> & MR<7> & !N_PZ_199 & N_PZ_200
+	# !_old_PP_11<10> & !MR<7> & N_PZ_199 & !N_PZ_200
+	# MP<3> & MR<7> & N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009
+	# MP<3> & !MR<7> & 
+	!Maddsub_old_PP_12_addsub0000__or0009 & N_PZ_200
+	# !MP<3> & MR<7> & N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0009
+	# !MP<3> & !MR<7> & 
+	Maddsub_old_PP_12_addsub0000__or0009 & N_PZ_200
+	# MP<4> & MR<7> & !N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009
+	# MP<4> & !MR<7> & 
+	!Maddsub_old_PP_12_addsub0000__or0009 & !N_PZ_200
+	# !MP<4> & MR<7> & !N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0009
+	# !MP<4> & !MR<7> & 
+	Maddsub_old_PP_12_addsub0000__or0009 & !N_PZ_200;	// (16 pt, 8 inp)
+
+MACROCELL | 1 | 6 | _old_PP_11<10>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 5 | 1 | 5 | 10
+INPUTS | 12 | _old_PP_8<10>  | N_PZ_41  | N_PZ_191  | MP<5>  | Maddsub_old_PP_11_addsub0000__or0009  | N_PZ_203  | MP<6>  | N_PZ_130  | MR<4>  | MR<3>  | MR<5>  | N_PZ_16
+INPUTMC | 7 | 6 | 8 | 3 | 9 | 1 | 12 | 7 | 3 | 1 | 14 | 1 | 13 | 3 | 8
+INPUTP | 5 | 161 | 160 | 195 | 194 | 20
+EQ | 33 | 
+   _old_PP_11<10> = _old_PP_8<10> & N_PZ_41 & !N_PZ_191
+	# MP<5> & !_old_PP_8<10> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & N_PZ_203
+	# !MP<5> & !_old_PP_8<10> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & N_PZ_203
+	# _old_PP_8<10> & MP<6> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & N_PZ_130
+	# _old_PP_8<10> & !MP<6> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & N_PZ_130
+	# MR<4> & MR<3> & MP<5> & _old_PP_8<10> & 
+	!Maddsub_old_PP_11_addsub0000__or0009
+	# MR<4> & MR<3> & !MP<5> & _old_PP_8<10> & 
+	Maddsub_old_PP_11_addsub0000__or0009
+	# !MR<4> & !MR<3> & MP<5> & _old_PP_8<10> & 
+	Maddsub_old_PP_11_addsub0000__or0009
+	# !MR<4> & !MR<3> & !MP<5> & _old_PP_8<10> & 
+	!Maddsub_old_PP_11_addsub0000__or0009
+	# _old_PP_8<10> & MP<6> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & MR<5> & !N_PZ_203
+	# _old_PP_8<10> & !MP<6> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & MR<5> & !N_PZ_203
+	# !_old_PP_8<10> & MP<6> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & !MR<5> & N_PZ_16
+	# !_old_PP_8<10> & MP<6> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & MR<5> & N_PZ_16
+	# !_old_PP_8<10> & !MP<6> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & MR<5> & N_PZ_16
+	# !_old_PP_8<10> & !MP<6> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & !MR<5> & N_PZ_16
+	# MR<4> & MR<3> & MP<5> & !_old_PP_8<10> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & !MR<5>
+	# MR<4> & MR<3> & !MP<5> & !_old_PP_8<10> & 
+	!Maddsub_old_PP_11_addsub0000__or0009 & !MR<5>;	// (17 pt, 12 inp)
+
+MACROCELL | 6 | 8 | _old_PP_8<10>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 1 | 6 | 1 | 5 | 6 | 7
+INPUTS | 4 | N_PZ_94  | N_PZ_39  | N_PZ_38  | Maddsub_old_PP_8_addsub0000__or0009
+INPUTMC | 4 | 6 | 1 | 7 | 13 | 4 | 9 | 2 | 11
+EQ | 5 | 
+   _old_PP_8<10> = N_PZ_94
+	$ !N_PZ_39 & N_PZ_38 & 
+	Maddsub_old_PP_8_addsub0000__or0009
+	# !N_PZ_39 & !N_PZ_38 & 
+	!Maddsub_old_PP_8_addsub0000__or0009;	// (3 pt, 4 inp)
+
+MACROCELL | 6 | 1 | N_PZ_94_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 14 | 6 | 8 | 6 | 2 | 2 | 12 | 1 | 11 | 2 | 11 | 6 | 9 | 2 | 10 | 6 | 7 | 6 | 3 | 0 | 4 | 6 | 6 | 2 | 14 | 0 | 6 | 9 | 8
+INPUTS | 6 | MR<0>  | MP<7>  | MR<1>  | MP<5>  | MP<6>  | N_PZ_37
+INPUTMC | 1 | 4 | 10
+INPUTP | 5 | 33 | 19 | 32 | 161 | 160
+EQ | 4 | 
+   N_PZ_94 = !MR<0> & MP<7>
+	# MR<1> & MP<7>
+	# !MR<1> & !MP<7>
+	# !MP<5> & !MP<7> & !MP<6> & N_PZ_37;	// (4 pt, 6 inp)
+
+MACROCELL | 4 | 10 | N_PZ_37_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 6 | 1 | 6 | 0 | 6 | 15 | 6 | 2 | 2 | 12 | 0 | 4 | 2 | 14 | 0 | 6
+INPUTS | 3 | MP<3>  | MP<4>  | N_PZ_28
+INPUTMC | 1 | 3 | 10
+INPUTP | 2 | 34 | 162
+EQ | 1 | 
+   N_PZ_37 = !MP<3> & !MP<4> & N_PZ_28;	// (1 pt, 3 inp)
+
+MACROCELL | 3 | 10 | N_PZ_28_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 4 | 10 | 7 | 15 | 6 | 14 | 6 | 15 | 8 | 0
+INPUTS | 3 | MP<0>  | MP<1>  | MP<2>
+INPUTP | 3 | 17 | 18 | 35
+EQ | 1 | 
+   N_PZ_28 = !MP<0> & !MP<1> & !MP<2>;	// (1 pt, 3 inp)
+
+MACROCELL | 7 | 13 | N_PZ_39_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 14 | 0 | 15 | 0 | 7 | 2 | 11 | 6 | 8 | 10 | 6 | 0 | 14 | 6 | 13 | 7 | 6 | 2 | 9 | 2 | 10 | 6 | 7 | 2 | 14 | 0 | 6 | 10 | 4
+INPUTS | 3 | MR<3>  | MR<1>  | MR<2>
+INPUTP | 3 | 194 | 32 | 218
+EQ | 2 | 
+   N_PZ_39 = MR<3> & MR<1> & MR<2>
+	# !MR<3> & !MR<1> & !MR<2>;	// (2 pt, 3 inp)
+
+MACROCELL | 4 | 9 | N_PZ_38_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 2 | 11 | 6 | 8 | 2 | 10 | 6 | 7 | 0 | 4 | 2 | 14 | 0 | 6
+INPUTS | 2 | MR<3>  | MP<7>
+INPUTP | 2 | 194 | 19
+EQ | 2 | 
+   N_PZ_38 = MR<3> & !MP<7>
+	# !MR<3> & MP<7>;	// (2 pt, 2 inp)
+
+MACROCELL | 2 | 11 | Maddsub_old_PP_8_addsub0000__or0009_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 6 | 8 | 6 | 7 | 6 | 6
+INPUTS | 11 | N_PZ_94  | Maddsub_old_PP_8_addsub0000__or0008  | MP<7>  | N_PZ_39  | N_PZ_231  | N_PZ_38  | N_PZ_141  | MR<3>  | MP<6>  | N_PZ_46  | N_PZ_155
+INPUTMC | 8 | 6 | 1 | 2 | 8 | 7 | 13 | 1 | 11 | 4 | 9 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 19 | 194 | 160
+EQ | 6 | 
+   Maddsub_old_PP_8_addsub0000__or0009 = N_PZ_94 & Maddsub_old_PP_8_addsub0000__or0008
+	# MP<7> & N_PZ_39 & !N_PZ_231
+	# !N_PZ_38 & N_PZ_141 & !N_PZ_231
+	# MR<3> & MP<6> & !N_PZ_141 & !N_PZ_231
+	# !MP<6> & !N_PZ_46 & !N_PZ_155 & !N_PZ_231
+	# !N_PZ_38 & !N_PZ_46 & N_PZ_155 & !N_PZ_231;	// (6 pt, 11 inp)
+
+MACROCELL | 2 | 8 | Maddsub_old_PP_8_addsub0000__or0008_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 1 | 11 | 2 | 11 | 6 | 9
+INPUTS | 9 | Maddsub_old_PP_8_addsub0000__or0007  | _old_PP_5<8>  | MP<6>  | N_PZ_197  | MR<3>  | MP<5>  | N_PZ_141  | N_PZ_46  | N_PZ_155
+INPUTMC | 6 | 7 | 7 | 2 | 12 | 0 | 15 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 160 | 194 | 161
+EQ | 14 | 
+   Maddsub_old_PP_8_addsub0000__or0008 = Maddsub_old_PP_8_addsub0000__or0007 & 
+	!_old_PP_5<8>
+	# MP<6> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_197
+	# MP<6> & !N_PZ_197 & !_old_PP_5<8>
+	# MR<3> & MP<5> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0007
+	# MR<3> & MP<5> & !N_PZ_141 & !_old_PP_5<8>
+	# !MP<5> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & !N_PZ_155
+	# !MP<5> & !N_PZ_46 & !N_PZ_155 & !_old_PP_5<8>
+	# !MP<6> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & N_PZ_155
+	# !MP<6> & !N_PZ_46 & N_PZ_155 & !_old_PP_5<8>;	// (9 pt, 9 inp)
+
+MACROCELL | 2 | 7 | N_PZ_141_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 15 | 0 | 15 | 0 | 9 | 0 | 7 | 0 | 8 | 0 | 10 | 7 | 8 | 7 | 7 | 2 | 8 | 2 | 11 | 0 | 14 | 6 | 13 | 7 | 6 | 2 | 9 | 2 | 14 | 0 | 6
+INPUTS | 3 | MR<3>  | MR<1>  | MR<2>
+INPUTP | 3 | 194 | 32 | 218
+EQ | 2 | 
+   N_PZ_141 = MR<3> & MR<1>
+	# MR<3> & MR<2>;	// (2 pt, 3 inp)
+
+MACROCELL | 7 | 7 | Maddsub_old_PP_8_addsub0000__or0007_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 2 | 8 | 2 | 9
+INPUTS | 9 | Maddsub_old_PP_8_addsub0000__or0006  | _old_PP_5<7>  | MP<5>  | N_PZ_197  | MR<3>  | MP<4>  | N_PZ_141  | N_PZ_46  | N_PZ_155
+INPUTMC | 6 | 7 | 8 | 6 | 2 | 0 | 15 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 161 | 194 | 162
+EQ | 14 | 
+   Maddsub_old_PP_8_addsub0000__or0007 = Maddsub_old_PP_8_addsub0000__or0006 & 
+	!_old_PP_5<7>
+	# MP<5> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_197
+	# MP<5> & !N_PZ_197 & !_old_PP_5<7>
+	# MR<3> & MP<4> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0006
+	# MR<3> & MP<4> & !N_PZ_141 & !_old_PP_5<7>
+	# !MP<5> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & N_PZ_155
+	# !MP<5> & !N_PZ_46 & N_PZ_155 & !_old_PP_5<7>
+	# !MP<4> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & !N_PZ_155
+	# !MP<4> & !N_PZ_46 & !N_PZ_155 & !_old_PP_5<7>;	// (9 pt, 9 inp)
+
+MACROCELL | 7 | 8 | Maddsub_old_PP_8_addsub0000__or0006_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 7 | 7 | 7 | 6
+INPUTS | 9 | _old_PP_5<6>  | Maddsub_old_PP_8_addsub0000__or0005  | MP<4>  | N_PZ_197  | MR<3>  | MP<3>  | N_PZ_141  | N_PZ_46  | N_PZ_155
+INPUTMC | 6 | 6 | 0 | 0 | 10 | 0 | 15 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 162 | 194 | 34
+EQ | 14 | 
+   Maddsub_old_PP_8_addsub0000__or0006 = !_old_PP_5<6> & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<4> & !_old_PP_5<6> & !N_PZ_197
+	# MP<4> & !N_PZ_197 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MR<3> & MP<3> & !N_PZ_141 & !_old_PP_5<6>
+	# MR<3> & MP<3> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<3> & !_old_PP_5<6> & !N_PZ_46 & !N_PZ_155
+	# !MP<3> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<4> & !_old_PP_5<6> & !N_PZ_46 & N_PZ_155
+	# !MP<4> & !N_PZ_46 & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005;	// (9 pt, 9 inp)
+
+MACROCELL | 6 | 0 | _old_PP_5<6>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 7 | 8 | 6 | 2 | 6 | 13
+INPUTS | 5 | MR<0>  | MP<6>  | MR<1>  | MP<5>  | N_PZ_37
+INPUTMC | 1 | 4 | 10
+INPUTP | 4 | 33 | 160 | 32 | 161
+EQ | 4 | 
+   !_old_PP_5<6> = MR<0> & MP<6>
+	$ !MR<1>
+	# !MP<5> & N_PZ_37
+	# !MR<0> & MP<5> & !N_PZ_37;	// (4 pt, 5 inp)
+
+MACROCELL | 7 | 9 | N_PZ_46_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 18 | 0 | 9 | 0 | 7 | 0 | 8 | 0 | 10 | 7 | 8 | 7 | 7 | 2 | 8 | 2 | 11 | 0 | 14 | 6 | 13 | 7 | 6 | 2 | 9 | 2 | 10 | 6 | 3 | 0 | 4 | 6 | 6 | 2 | 14 | 0 | 6
+INPUTS | 3 | MR<3>  | MR<1>  | MR<2>
+INPUTP | 3 | 194 | 32 | 218
+EQ | 2 | 
+   N_PZ_46 = MR<3>
+	# !MR<1> & !MR<2>;	// (2 pt, 3 inp)
+
+MACROCELL | 7 | 14 | N_PZ_155_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 13 | 0 | 9 | 0 | 8 | 0 | 10 | 7 | 8 | 7 | 7 | 2 | 8 | 2 | 11 | 0 | 14 | 6 | 13 | 7 | 6 | 2 | 9 | 0 | 4 | 0 | 6
+INPUTS | 3 | MR<3>  | MR<1>  | MR<2>
+INPUTP | 3 | 194 | 32 | 218
+EQ | 2 | 
+   N_PZ_155 = !MR<3> & !MR<1>
+	# !MR<3> & !MR<2>;	// (2 pt, 3 inp)
+
+MACROCELL | 0 | 15 | N_PZ_197_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 0 | 9 | 0 | 8 | 0 | 10 | 7 | 8 | 7 | 7 | 2 | 8
+INPUTS | 2 | N_PZ_39  | N_PZ_141
+INPUTMC | 2 | 7 | 13 | 2 | 7
+EQ | 1 | 
+   N_PZ_197 = !N_PZ_39 & !N_PZ_141;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 10 | Maddsub_old_PP_8_addsub0000__or0005_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 7 | 8 | 6 | 13
+INPUTS | 9 | Maddsub_old_PP_8_addsub0000__or0004  | _old_PP_5<5>  | MP<3>  | N_PZ_197  | MR<3>  | MP<2>  | N_PZ_141  | N_PZ_46  | N_PZ_155
+INPUTMC | 6 | 10 | 3 | 6 | 15 | 0 | 15 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 34 | 194 | 35
+EQ | 14 | 
+   Maddsub_old_PP_8_addsub0000__or0005 = Maddsub_old_PP_8_addsub0000__or0004 & 
+	!_old_PP_5<5>
+	# MP<3> & !N_PZ_197 & 
+	Maddsub_old_PP_8_addsub0000__or0004
+	# MP<3> & !N_PZ_197 & !_old_PP_5<5>
+	# MR<3> & MP<2> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0004
+	# MR<3> & MP<2> & !N_PZ_141 & !_old_PP_5<5>
+	# !MP<3> & !N_PZ_46 & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004
+	# !MP<3> & !N_PZ_46 & N_PZ_155 & !_old_PP_5<5>
+	# !MP<2> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004
+	# !MP<2> & !N_PZ_46 & !N_PZ_155 & !_old_PP_5<5>;	// (9 pt, 9 inp)
+
+MACROCELL | 10 | 3 | Maddsub_old_PP_8_addsub0000__or0004_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 10 | 10 | 6 | 0 | 14
+INPUTS | 3 | Maddsub_old_PP_8_addsub0000_or0004_xor0000  | _old_PP_5<4>  | N_PZ_236
+INPUTMC | 3 | 0 | 9 | 6 | 14 | 10 | 8
+EQ | 5 | 
+   Maddsub_old_PP_8_addsub0000__or0004 = !Maddsub_old_PP_8_addsub0000_or0004_xor0000 & 
+	!_old_PP_5<4>
+	# !Maddsub_old_PP_8_addsub0000_or0004_xor0000 & 
+	N_PZ_236
+	# !_old_PP_5<4> & N_PZ_236;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 9 | Maddsub_old_PP_8_addsub0000_or0004_xor0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 3 | 10 | 6
+INPUTS | 7 | MP<2>  | N_PZ_197  | MR<3>  | MP<1>  | N_PZ_141  | N_PZ_46  | N_PZ_155
+INPUTMC | 4 | 0 | 15 | 2 | 7 | 7 | 9 | 7 | 14
+INPUTP | 3 | 35 | 194 | 18
+EQ | 4 | 
+   Maddsub_old_PP_8_addsub0000_or0004_xor0000 = !MP<2> & !N_PZ_197
+	# MR<3> & !MP<1> & !N_PZ_141
+	# MP<1> & !N_PZ_46 & !N_PZ_155
+	# MP<2> & !N_PZ_46 & N_PZ_155;	// (4 pt, 7 inp)
+
+MACROCELL | 6 | 14 | _old_PP_5<4>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 10 | 3 | 6 | 15 | 10 | 6
+INPUTS | 6 | MR<0>  | MR<1>  | MP<4>  | MP<3>  | _old_PP_5<3>  | N_PZ_28
+INPUTMC | 2 | 7 | 15 | 3 | 10
+INPUTP | 4 | 33 | 32 | 162 | 34
+EQ | 6 | 
+   _old_PP_5<4> = MR<0> & !MR<1> & MP<4>
+	# !MP<3> & !MP<4> & _old_PP_5<3>
+	# MR<0> & MR<1> & MP<3> & !MP<4>
+	# MR<0> & MP<4> & N_PZ_28 & !_old_PP_5<3>
+	# !MR<0> & MR<1> & !MP<3> & !N_PZ_28
+	# MR<1> & MP<3> & N_PZ_28 & !_old_PP_5<3>;	// (6 pt, 6 inp)
+
+MACROCELL | 7 | 15 | _old_PP_5<3>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 6 | 14 | 10 | 8 | 6 | 15 | 10 | 4
+INPUTS | 7 | MR<1>  | N_PZ_28  | MR<0>  | MP<3>  | MP<0>  | MP<2>  | MP<1>
+INPUTMC | 1 | 3 | 10
+INPUTP | 6 | 32 | 33 | 34 | 17 | 35 | 18
+EQ | 4 | 
+   _old_PP_5<3> = MR<1> & !N_PZ_28
+	$ MR<0> & MP<3>
+	# !MR<0> & MP<0> & MR<1> & !N_PZ_28 & MP<2>
+	# !MR<0> & MR<1> & !N_PZ_28 & MP<1> & MP<2>;	// (4 pt, 7 inp)
+
+MACROCELL | 10 | 8 | N_PZ_236_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 3 | 10 | 6
+INPUTS | 3 | _old_PP_5<3>  | Maddsub_old_PP_8_addsub0000__or0002  | Maddsub_old_PP_8_addsub0000_or0003_xor0000
+INPUTMC | 3 | 7 | 15 | 0 | 7 | 0 | 8
+EQ | 6 | 
+   N_PZ_236 = !_old_PP_5<3> & 
+	!Maddsub_old_PP_8_addsub0000__or0002
+	# !_old_PP_5<3> & 
+	!Maddsub_old_PP_8_addsub0000_or0003_xor0000
+	# !Maddsub_old_PP_8_addsub0000__or0002 & 
+	!Maddsub_old_PP_8_addsub0000_or0003_xor0000;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 7 | Maddsub_old_PP_8_addsub0000__or0002_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 8 | 10 | 4
+INPUTS | 10 | MP<0>  | N_PZ_46  | MR<3>  | N_PZ_141  | MR<0>  | MR<1>  | MP<2>  | N_PZ_39  | MP<1>  | MR<2>
+INPUTMC | 3 | 7 | 9 | 2 | 7 | 7 | 13
+INPUTP | 7 | 17 | 194 | 33 | 32 | 35 | 18 | 218
+EQ | 7 | 
+   Maddsub_old_PP_8_addsub0000__or0002 = !MP<0> & N_PZ_46
+	# MR<3> & !N_PZ_141
+	# MR<0> & MP<0> & !MR<1> & MP<2>
+	# MR<0> & !MP<2> & N_PZ_39 & N_PZ_141
+	# !MR<0> & !MP<1> & N_PZ_39 & N_PZ_141
+	# MR<0> & MP<0> & !MP<2> & !N_PZ_39 & !MR<2>
+	# !MR<0> & MP<0> & !MP<1> & !N_PZ_39 & !MR<2>;	// (7 pt, 10 inp)
+
+MACROCELL | 0 | 8 | Maddsub_old_PP_8_addsub0000_or0003_xor0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 8 | 10 | 4
+INPUTS | 7 | MP<1>  | N_PZ_197  | MP<0>  | N_PZ_46  | N_PZ_155  | MR<3>  | N_PZ_141
+INPUTMC | 4 | 0 | 15 | 7 | 9 | 7 | 14 | 2 | 7
+INPUTP | 3 | 18 | 17 | 194
+EQ | 4 | 
+   Maddsub_old_PP_8_addsub0000_or0003_xor0000 = !MP<1> & !N_PZ_197
+	# MP<0> & !N_PZ_46 & !N_PZ_155
+	# !MP<0> & MR<3> & !N_PZ_141
+	# MP<1> & !N_PZ_46 & N_PZ_155;	// (4 pt, 7 inp)
+
+MACROCELL | 6 | 15 | _old_PP_5<5>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 0 | 10 | 0 | 14
+INPUTS | 8 | MR<0>  | MP<5>  | MR<1>  | N_PZ_37  | MP<4>  | N_PZ_28  | _old_PP_5<3>  | _old_PP_5<4>
+INPUTMC | 4 | 4 | 10 | 3 | 10 | 7 | 15 | 6 | 14
+INPUTP | 4 | 33 | 161 | 32 | 162
+EQ | 6 | 
+   _old_PP_5<5> = MR<0> & MP<5> & !MR<1>
+	# MR<0> & !MP<5> & MR<1> & !N_PZ_37
+	# !MR<0> & MR<1> & !N_PZ_37 & !MP<4>
+	# MR<0> & MP<5> & !MP<4> & N_PZ_28 & !_old_PP_5<3>
+	# !MR<0> & MR<1> & !N_PZ_37 & N_PZ_28 & 
+	!_old_PP_5<4>;	// (5 pt, 8 inp)
+
+MACROCELL | 6 | 2 | _old_PP_5<7>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 7 | 7 | 7 | 6
+INPUTS | 7 | MR<0>  | N_PZ_94  | MP<6>  | _old_PP_5<6>  | MR<1>  | N_PZ_37  | MP<7>
+INPUTMC | 3 | 6 | 1 | 6 | 0 | 4 | 10
+INPUTP | 4 | 33 | 160 | 32 | 19
+EQ | 5 | 
+   _old_PP_5<7> = MR<0> & !N_PZ_94
+	# !MR<0> & !MP<6> & _old_PP_5<6>
+	# !MR<0> & MR<1> & !MP<6> & !N_PZ_37
+	# MR<0> & MR<1> & MP<7> & !MP<6> & !_old_PP_5<6>
+	# !MR<0> & MR<1> & MP<6> & N_PZ_37 & !_old_PP_5<6>;	// (5 pt, 7 inp)
+
+MACROCELL | 2 | 12 | _old_PP_5<8>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 2 | 8 | 2 | 9
+INPUTS | 7 | N_PZ_94  | MR<0>  | MP<5>  | MR<1>  | MP<7>  | MP<6>  | N_PZ_37
+INPUTMC | 2 | 6 | 1 | 4 | 10
+INPUTP | 5 | 33 | 161 | 32 | 19 | 160
+EQ | 3 | 
+   _old_PP_5<8> = !N_PZ_94
+	# !MR<0> & !MP<5> & MR<1> & MP<7> & !MP<6> & 
+	N_PZ_37;	// (2 pt, 7 inp)
+
+MACROCELL | 1 | 11 | N_PZ_231_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 2 | N_PZ_94  | Maddsub_old_PP_8_addsub0000__or0008
+INPUTMC | 2 | 6 | 1 | 2 | 8
+EQ | 1 | 
+   N_PZ_231 = !N_PZ_94 & !Maddsub_old_PP_8_addsub0000__or0008;	// (1 pt, 2 inp)
+
+MACROCELL | 7 | 3 | Maddsub_old_PP_11_addsub0000__or0009_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 1 | 6 | 1 | 5
+INPUTS | 10 | Maddsub_old_PP_11_addsub0000__or0008  | _old_PP_8<9>  | MP<4>  | N_PZ_203  | MP<5>  | N_PZ_41  | MR<5>  | N_PZ_16  | MR<4>  | MR<3>
+INPUTMC | 5 | 4 | 11 | 2 | 10 | 1 | 14 | 3 | 9 | 3 | 8
+INPUTP | 5 | 162 | 161 | 20 | 195 | 194
+EQ | 14 | 
+   Maddsub_old_PP_11_addsub0000__or0009 = Maddsub_old_PP_11_addsub0000__or0008 & 
+	_old_PP_8<9>
+	# MP<4> & Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_203
+	# MP<4> & N_PZ_203 & _old_PP_8<9>
+	# MP<5> & Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_41 & !N_PZ_203
+	# MP<5> & N_PZ_41 & !N_PZ_203 & _old_PP_8<9>
+	# !MP<5> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & N_PZ_16
+	# !MP<5> & !MR<5> & N_PZ_16 & _old_PP_8<9>
+	# MR<4> & MR<3> & !MP<4> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008
+	# MR<4> & MR<3> & !MP<4> & !MR<5> & _old_PP_8<9>;	// (9 pt, 10 inp)
+
+MACROCELL | 4 | 11 | Maddsub_old_PP_11_addsub0000__or0008_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 7 | 3 | 10 | 2
+INPUTS | 10 | Maddsub_old_PP_11_addsub0000__or0007  | _old_PP_8<8>  | MP<3>  | N_PZ_203  | MP<4>  | N_PZ_41  | MR<5>  | N_PZ_16  | MR<4>  | MR<3>
+INPUTMC | 5 | 4 | 14 | 2 | 9 | 1 | 14 | 3 | 9 | 3 | 8
+INPUTP | 5 | 34 | 162 | 20 | 195 | 194
+EQ | 14 | 
+   Maddsub_old_PP_11_addsub0000__or0008 = Maddsub_old_PP_11_addsub0000__or0007 & 
+	_old_PP_8<8>
+	# MP<3> & Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_203
+	# MP<3> & N_PZ_203 & _old_PP_8<8>
+	# MP<4> & Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_41 & !N_PZ_203
+	# MP<4> & N_PZ_41 & !N_PZ_203 & _old_PP_8<8>
+	# !MP<4> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & N_PZ_16
+	# !MP<4> & !MR<5> & N_PZ_16 & _old_PP_8<8>
+	# MR<4> & MR<3> & !MP<3> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007
+	# MR<4> & MR<3> & !MP<3> & !MR<5> & _old_PP_8<8>;	// (9 pt, 10 inp)
+
+MACROCELL | 4 | 14 | Maddsub_old_PP_11_addsub0000__or0007_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 4 | 11 | 4 | 12
+INPUTS | 10 | Maddsub_old_PP_11_addsub0000__or0006  | _old_PP_8<7>  | MP<2>  | N_PZ_203  | MP<3>  | N_PZ_41  | MR<5>  | N_PZ_16  | MR<4>  | MR<3>
+INPUTMC | 5 | 3 | 12 | 7 | 6 | 1 | 14 | 3 | 9 | 3 | 8
+INPUTP | 5 | 35 | 34 | 20 | 195 | 194
+EQ | 14 | 
+   Maddsub_old_PP_11_addsub0000__or0007 = Maddsub_old_PP_11_addsub0000__or0006 & 
+	_old_PP_8<7>
+	# MP<2> & Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_203
+	# MP<2> & N_PZ_203 & _old_PP_8<7>
+	# MP<3> & Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_41 & !N_PZ_203
+	# MP<3> & N_PZ_41 & !N_PZ_203 & _old_PP_8<7>
+	# !MP<3> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & N_PZ_16
+	# !MP<3> & !MR<5> & N_PZ_16 & _old_PP_8<7>
+	# MR<4> & MR<3> & !MP<2> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006
+	# MR<4> & MR<3> & !MP<2> & !MR<5> & _old_PP_8<7>;	// (9 pt, 10 inp)
+
+MACROCELL | 3 | 12 | Maddsub_old_PP_11_addsub0000__or0006_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 4 | 14 | 4 | 15
+INPUTS | 10 | Maddsub_old_PP_11_addsub0000__or0005  | _old_PP_8<6>  | MP<1>  | N_PZ_203  | MP<2>  | N_PZ_41  | MR<5>  | N_PZ_16  | MR<4>  | MR<3>
+INPUTMC | 5 | 3 | 15 | 6 | 13 | 1 | 14 | 3 | 9 | 3 | 8
+INPUTP | 5 | 18 | 35 | 20 | 195 | 194
+EQ | 14 | 
+   Maddsub_old_PP_11_addsub0000__or0006 = Maddsub_old_PP_11_addsub0000__or0005 & 
+	_old_PP_8<6>
+	# MP<1> & Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_203
+	# MP<1> & N_PZ_203 & _old_PP_8<6>
+	# MP<2> & Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_41 & !N_PZ_203
+	# MP<2> & N_PZ_41 & !N_PZ_203 & _old_PP_8<6>
+	# !MP<2> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & N_PZ_16
+	# !MP<2> & !MR<5> & _old_PP_8<6> & N_PZ_16
+	# MR<4> & MR<3> & !MP<1> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005
+	# MR<4> & MR<3> & !MP<1> & !MR<5> & _old_PP_8<6>;	// (9 pt, 10 inp)
+
+MACROCELL | 3 | 15 | Maddsub_old_PP_11_addsub0000__or0005_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 3 | 12 | 3 | 14
+INPUTS | 8 | MP<0>  | N_PZ_41  | _old_PP_8<4>  | _old_PP_8<5>  | MP<1>  | MR<5>  | N_PZ_130  | N_PZ_203
+INPUTMC | 5 | 3 | 9 | 10 | 6 | 0 | 14 | 1 | 13 | 1 | 14
+INPUTP | 3 | 17 | 18 | 20
+EQ | 12 | 
+   Maddsub_old_PP_11_addsub0000__or0005 = !MP<0> & !N_PZ_41
+	$ MP<0> & _old_PP_8<4> & _old_PP_8<5>
+	# MP<0> & !MP<1> & !N_PZ_41 & _old_PP_8<5>
+	# MP<0> & !MR<5> & _old_PP_8<5> & !N_PZ_130
+	# MP<0> & _old_PP_8<5> & !N_PZ_130 & N_PZ_203
+	# MP<1> & N_PZ_41 & _old_PP_8<5> & !N_PZ_203
+	# MP<0> & MP<1> & N_PZ_41 & _old_PP_8<4> & 
+	!N_PZ_203
+	# MP<0> & !MP<1> & !N_PZ_41 & _old_PP_8<4> & 
+	N_PZ_130
+	# !MP<0> & MP<1> & !N_PZ_41 & !_old_PP_8<5> & 
+	N_PZ_130;	// (9 pt, 8 inp)
+
+MACROCELL | 3 | 9 | N_PZ_41_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 18 | 3 | 15 | 3 | 12 | 4 | 14 | 4 | 11 | 7 | 3 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 7 | 1 | 8 | 9 | 14 | 8 | 14 | 9 | 12 | 9 | 10 | 3 | 0
+INPUTS | 3 | MR<5>  | MR<4>  | MR<3>
+INPUTP | 3 | 20 | 195 | 194
+EQ | 2 | 
+   N_PZ_41 = MR<5>
+	# !MR<4> & !MR<3>;	// (2 pt, 3 inp)
+
+MACROCELL | 10 | 6 | _old_PP_8<4>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 3 | 15 | 3 | 1 | 3 | 0
+INPUTS | 5 | N_PZ_39  | Maddsub_old_PP_8_addsub0000__or0004  | _old_PP_5<4>  | Maddsub_old_PP_8_addsub0000_or0004_xor0000  | N_PZ_236
+INPUTMC | 5 | 7 | 13 | 10 | 3 | 6 | 14 | 0 | 9 | 10 | 8
+EQ | 6 | 
+   _old_PP_8<4> = !N_PZ_39 & !Maddsub_old_PP_8_addsub0000__or0004
+	$ N_PZ_39 & !_old_PP_5<4>
+	# Maddsub_old_PP_8_addsub0000__or0004 & 
+	!Maddsub_old_PP_8_addsub0000_or0004_xor0000 & !_old_PP_5<4> & N_PZ_236
+	# !N_PZ_39 & !Maddsub_old_PP_8_addsub0000__or0004 & 
+	Maddsub_old_PP_8_addsub0000_or0004_xor0000 & _old_PP_5<4> & !N_PZ_236;	// (4 pt, 5 inp)
+
+MACROCELL | 0 | 14 | _old_PP_8<5>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 3 | 15 | 3 | 0
+INPUTS | 9 | N_PZ_39  | _old_PP_5<5>  | MP<3>  | N_PZ_141  | Maddsub_old_PP_8_addsub0000__or0004  | N_PZ_155  | MR<3>  | MP<2>  | N_PZ_46
+INPUTMC | 6 | 7 | 13 | 6 | 15 | 2 | 7 | 10 | 3 | 7 | 14 | 7 | 9
+INPUTP | 3 | 34 | 194 | 35
+EQ | 33 | 
+   _old_PP_8<5> = N_PZ_39 & !_old_PP_5<5>
+	# MP<3> & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# MP<3> & N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# !MP<3> & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# !MP<3> & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# MR<3> & MP<2> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# MR<3> & !MP<2> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# MP<3> & !N_PZ_39 & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# MP<3> & !N_PZ_46 & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# !MP<3> & !N_PZ_39 & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# !MP<3> & !N_PZ_46 & N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# MP<2> & !N_PZ_141 & N_PZ_46 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# MP<2> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>
+	# MP<2> & !N_PZ_46 & !N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# !MP<2> & !N_PZ_141 & N_PZ_46 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# !MP<2> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0004 & !_old_PP_5<5>
+	# !MP<2> & !N_PZ_46 & !N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0004 & _old_PP_5<5>;	// (17 pt, 9 inp)
+
+MACROCELL | 1 | 13 | N_PZ_130_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 3 | 15 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 7 | 3 | 0
+INPUTS | 3 | MR<4>  | MR<5>  | MR<3>
+INPUTP | 3 | 195 | 20 | 194
+EQ | 2 | 
+   N_PZ_130 = !MR<4> & !MR<5>
+	# !MR<3> & !MR<5>;	// (2 pt, 3 inp)
+
+MACROCELL | 1 | 14 | N_PZ_203_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 15 | 3 | 15 | 3 | 12 | 4 | 14 | 4 | 11 | 7 | 3 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 1 | 1 | 7 | 1 | 8 | 3 | 0
+INPUTS | 3 | MR<4>  | MR<3>  | MR<5>
+INPUTP | 3 | 195 | 194 | 20
+EQ | 1 | 
+   N_PZ_203 = !MR<4> & !MR<3> & MR<5>;	// (1 pt, 3 inp)
+
+MACROCELL | 6 | 13 | _old_PP_8<6>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 3 | 12 | 3 | 14
+INPUTS | 9 | N_PZ_39  | _old_PP_5<6>  | MP<4>  | N_PZ_141  | Maddsub_old_PP_8_addsub0000__or0005  | N_PZ_155  | MR<3>  | MP<3>  | N_PZ_46
+INPUTMC | 6 | 7 | 13 | 6 | 0 | 2 | 7 | 0 | 10 | 7 | 14 | 7 | 9
+INPUTP | 3 | 162 | 194 | 34
+EQ | 33 | 
+   _old_PP_8<6> = N_PZ_39 & !_old_PP_5<6>
+	# MP<4> & N_PZ_141 & !_old_PP_5<6> & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<4> & !_old_PP_5<6> & N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<4> & N_PZ_141 & !_old_PP_5<6> & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<4> & !_old_PP_5<6> & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MR<3> & MP<3> & !N_PZ_141 & _old_PP_5<6> & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# MR<3> & !MP<3> & !N_PZ_141 & _old_PP_5<6> & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<3> & !N_PZ_141 & !_old_PP_5<6> & N_PZ_46 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<3> & _old_PP_5<6> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<3> & !_old_PP_5<6> & !N_PZ_46 & !N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<3> & !N_PZ_141 & !_old_PP_5<6> & N_PZ_46 & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<3> & _old_PP_5<6> & !N_PZ_46 & !N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<3> & !_old_PP_5<6> & !N_PZ_46 & !N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# MP<4> & !N_PZ_39 & N_PZ_141 & _old_PP_5<6> & 
+	!Maddsub_old_PP_8_addsub0000__or0005
+	# MP<4> & _old_PP_5<6> & !N_PZ_46 & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<4> & !N_PZ_39 & N_PZ_141 & _old_PP_5<6> & 
+	Maddsub_old_PP_8_addsub0000__or0005
+	# !MP<4> & _old_PP_5<6> & !N_PZ_46 & N_PZ_155 & 
+	!Maddsub_old_PP_8_addsub0000__or0005;	// (17 pt, 9 inp)
+
+MACROCELL | 3 | 8 | N_PZ_16_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 14 | 3 | 12 | 4 | 14 | 4 | 11 | 7 | 3 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 7 | 1 | 8 | 3 | 1 | 3 | 0
+INPUTS | 2 | MR<4>  | MR<3>
+INPUTP | 2 | 195 | 194
+EQ | 2 | 
+   N_PZ_16 = MR<4> & !MR<3>
+	# !MR<4> & MR<3>;	// (2 pt, 2 inp)
+
+MACROCELL | 7 | 6 | _old_PP_8<7>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 4 | 14 | 4 | 15
+INPUTS | 9 | N_PZ_39  | _old_PP_5<7>  | MP<5>  | N_PZ_141  | Maddsub_old_PP_8_addsub0000__or0006  | N_PZ_155  | MR<3>  | MP<4>  | N_PZ_46
+INPUTMC | 6 | 7 | 13 | 6 | 2 | 2 | 7 | 7 | 8 | 7 | 14 | 7 | 9
+INPUTP | 3 | 161 | 194 | 162
+EQ | 33 | 
+   _old_PP_8<7> = N_PZ_39 & !_old_PP_5<7>
+	# MP<5> & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0006 & !_old_PP_5<7>
+	# MP<5> & !Maddsub_old_PP_8_addsub0000__or0006 & 
+	N_PZ_155 & !_old_PP_5<7>
+	# !MP<5> & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0006 & !_old_PP_5<7>
+	# !MP<5> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	N_PZ_155 & !_old_PP_5<7>
+	# MR<3> & MP<4> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0006 & _old_PP_5<7>
+	# MR<3> & !MP<4> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0006 & _old_PP_5<7>
+	# MP<5> & !N_PZ_39 & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0006 & _old_PP_5<7>
+	# MP<5> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & N_PZ_155 & _old_PP_5<7>
+	# !MP<5> & !N_PZ_39 & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0006 & _old_PP_5<7>
+	# !MP<5> & !Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & N_PZ_155 & _old_PP_5<7>
+	# MP<4> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0006 & N_PZ_46 & !_old_PP_5<7>
+	# MP<4> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & !N_PZ_155 & _old_PP_5<7>
+	# MP<4> & !Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & !N_PZ_155 & !_old_PP_5<7>
+	# !MP<4> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0006 & N_PZ_46 & !_old_PP_5<7>
+	# !MP<4> & Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & !N_PZ_155 & !_old_PP_5<7>
+	# !MP<4> & !Maddsub_old_PP_8_addsub0000__or0006 & 
+	!N_PZ_46 & !N_PZ_155 & _old_PP_5<7>;	// (17 pt, 9 inp)
+
+MACROCELL | 2 | 9 | _old_PP_8<8>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 4 | 11 | 4 | 12
+INPUTS | 9 | N_PZ_39  | _old_PP_5<8>  | MP<6>  | N_PZ_141  | Maddsub_old_PP_8_addsub0000__or0007  | N_PZ_155  | MR<3>  | MP<5>  | N_PZ_46
+INPUTMC | 6 | 7 | 13 | 2 | 12 | 2 | 7 | 7 | 7 | 7 | 14 | 7 | 9
+INPUTP | 3 | 160 | 194 | 161
+EQ | 33 | 
+   _old_PP_8<8> = N_PZ_39 & !_old_PP_5<8>
+	# MP<6> & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0007 & !_old_PP_5<8>
+	# MP<6> & !Maddsub_old_PP_8_addsub0000__or0007 & 
+	N_PZ_155 & !_old_PP_5<8>
+	# !MP<6> & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0007 & !_old_PP_5<8>
+	# !MP<6> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	N_PZ_155 & !_old_PP_5<8>
+	# MR<3> & MP<5> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0007 & _old_PP_5<8>
+	# MR<3> & !MP<5> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0007 & _old_PP_5<8>
+	# MP<5> & !N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0007 & N_PZ_46 & !_old_PP_5<8>
+	# MP<5> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & !N_PZ_155 & _old_PP_5<8>
+	# MP<5> & !Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & !N_PZ_155 & !_old_PP_5<8>
+	# !MP<5> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0007 & N_PZ_46 & !_old_PP_5<8>
+	# !MP<5> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & !N_PZ_155 & !_old_PP_5<8>
+	# !MP<5> & !Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & !N_PZ_155 & _old_PP_5<8>
+	# MP<6> & !N_PZ_39 & N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0007 & _old_PP_5<8>
+	# MP<6> & Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & N_PZ_155 & _old_PP_5<8>
+	# !MP<6> & !N_PZ_39 & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0007 & _old_PP_5<8>
+	# !MP<6> & !Maddsub_old_PP_8_addsub0000__or0007 & 
+	!N_PZ_46 & N_PZ_155 & _old_PP_5<8>;	// (17 pt, 9 inp)
+
+MACROCELL | 2 | 10 | _old_PP_8<9>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 7 | 3 | 10 | 2
+INPUTS | 9 | N_PZ_94  | N_PZ_39  | MR<1>  | MR<2>  | N_PZ_38  | N_PZ_195  | MR<3>  | MP<6>  | N_PZ_46
+INPUTMC | 5 | 6 | 1 | 7 | 13 | 4 | 9 | 6 | 9 | 7 | 9
+INPUTP | 4 | 32 | 218 | 194 | 160
+EQ | 9 | 
+   _old_PP_8<9> = N_PZ_94 & N_PZ_39
+	# MR<1> & !MR<2> & N_PZ_38 & N_PZ_195
+	# MR<1> & !MR<2> & !N_PZ_38 & !N_PZ_195
+	# !MR<1> & MR<2> & N_PZ_38 & N_PZ_195
+	# !MR<1> & MR<2> & !N_PZ_38 & !N_PZ_195
+	# MR<3> & !MR<1> & MP<6> & !MR<2> & !N_PZ_195
+	# MR<3> & !MR<1> & !MP<6> & !MR<2> & N_PZ_195
+	# MR<1> & MP<6> & MR<2> & !N_PZ_46 & N_PZ_195
+	# MR<1> & !MP<6> & MR<2> & !N_PZ_46 & !N_PZ_195;	// (9 pt, 9 inp)
+
+MACROCELL | 6 | 9 | N_PZ_195_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 2 | N_PZ_94  | Maddsub_old_PP_8_addsub0000__or0008
+INPUTMC | 2 | 6 | 1 | 2 | 8
+EQ | 2 | 
+   N_PZ_195 = N_PZ_94 & !Maddsub_old_PP_8_addsub0000__or0008
+	# !N_PZ_94 & Maddsub_old_PP_8_addsub0000__or0008;	// (2 pt, 2 inp)
+
+MACROCELL | 1 | 12 | N_PZ_191_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 10 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 7 | 9 | 14 | 9 | 12 | 9 | 10 | 3 | 0
+INPUTS | 3 | MR<4>  | MR<5>  | MR<3>
+INPUTP | 3 | 195 | 20 | 194
+EQ | 2 | 
+   N_PZ_191 = !MR<4> & MR<5>
+	# !MR<3> & MR<5>;	// (2 pt, 3 inp)
+
+MACROCELL | 1 | 15 | N_PZ_199_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 14 | 8 | 4 | 5 | 7 | 5 | 8 | 5 | 9 | 8 | 8 | 5 | 1 | 5 | 10 | 8 | 3 | 8 | 15 | 9 | 0 | 8 | 9 | 8 | 10 | 9 | 2 | 5 | 0
+INPUTS | 2 | MR<5>  | MR<6>
+INPUTP | 2 | 20 | 1
+EQ | 1 | 
+   N_PZ_199 = !MR<5> & !MR<6>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 9 | Maddsub_old_PP_12_addsub0000__or0009_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 5 | 1 | 5 | 10
+INPUTS | 3 | Maddsub_old_PP_12_addsub0000_or0009_xor0000  | _old_PP_11<9>  | N_PZ_86
+INPUTMC | 3 | 5 | 7 | 10 | 2 | 10 | 7
+EQ | 5 | 
+   Maddsub_old_PP_12_addsub0000__or0009 = !Maddsub_old_PP_12_addsub0000_or0009_xor0000 & 
+	_old_PP_11<9>
+	# !Maddsub_old_PP_12_addsub0000_or0009_xor0000 & 
+	N_PZ_86
+	# _old_PP_11<9> & N_PZ_86;	// (3 pt, 3 inp)
+
+MACROCELL | 5 | 7 | Maddsub_old_PP_12_addsub0000_or0009_xor0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 9 | 10 | 5
+INPUTS | 6 | MP<3>  | N_PZ_29  | MP<2>  | MR<7>  | N_PZ_200  | N_PZ_199
+INPUTMC | 3 | 8 | 4 | 1 | 10 | 1 | 15
+INPUTP | 3 | 34 | 35 | 158
+EQ | 4 | 
+   Maddsub_old_PP_12_addsub0000_or0009_xor0000 = !MP<3> & N_PZ_29
+	# MP<2> & !MR<7> & N_PZ_200
+	# !MP<2> & MR<7> & N_PZ_199
+	# MP<3> & !MR<7> & !N_PZ_199 & !N_PZ_200;	// (4 pt, 6 inp)
+
+MACROCELL | 8 | 4 | N_PZ_29_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 10 | 5 | 7 | 5 | 8 | 5 | 9 | 5 | 10 | 8 | 15 | 8 | 10 | 9 | 1 | 8 | 6 | 8 | 7 | 5 | 0
+INPUTS | 2 | MR<7>  | N_PZ_199
+INPUTMC | 1 | 1 | 15
+INPUTP | 1 | 158
+EQ | 2 | 
+   N_PZ_29 = MR<7> & !N_PZ_199
+	# !MR<7> & N_PZ_199;	// (2 pt, 2 inp)
+
+MACROCELL | 1 | 10 | N_PZ_200_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 13 | 5 | 7 | 5 | 8 | 5 | 9 | 8 | 8 | 5 | 1 | 5 | 10 | 8 | 3 | 8 | 15 | 9 | 0 | 8 | 9 | 8 | 10 | 9 | 2 | 5 | 0
+INPUTS | 2 | MR<5>  | MR<6>
+INPUTP | 2 | 20 | 1
+EQ | 1 | 
+   N_PZ_200 = MR<5> & MR<6>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 2 | _old_PP_11<9>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 9 | 10 | 5
+INPUTS | 12 | N_PZ_41  | _old_PP_8<9>  | N_PZ_191  | MP<5>  | Maddsub_old_PP_11_addsub0000__or0008  | N_PZ_130  | MP<4>  | N_PZ_203  | MR<4>  | MR<3>  | MR<5>  | N_PZ_16
+INPUTMC | 7 | 3 | 9 | 2 | 10 | 1 | 12 | 4 | 11 | 1 | 13 | 1 | 14 | 3 | 8
+INPUTP | 5 | 161 | 162 | 195 | 194 | 20
+EQ | 33 | 
+   _old_PP_11<9> = N_PZ_41 & _old_PP_8<9> & !N_PZ_191
+	# MP<5> & !Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_130 & _old_PP_8<9>
+	# !MP<5> & Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_130 & _old_PP_8<9>
+	# MP<4> & !Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_203 & !_old_PP_8<9>
+	# !MP<4> & Maddsub_old_PP_11_addsub0000__or0008 & 
+	N_PZ_203 & !_old_PP_8<9>
+	# MR<4> & MR<3> & MP<4> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & _old_PP_8<9>
+	# MR<4> & MR<3> & !MP<4> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & _old_PP_8<9>
+	# !MR<4> & !MR<3> & MP<4> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & _old_PP_8<9>
+	# !MR<4> & !MR<3> & !MP<4> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & _old_PP_8<9>
+	# MP<5> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & !N_PZ_203 & _old_PP_8<9>
+	# MP<5> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & N_PZ_16 & !_old_PP_8<9>
+	# MP<5> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & N_PZ_16 & !_old_PP_8<9>
+	# !MP<5> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & N_PZ_16 & !_old_PP_8<9>
+	# !MP<5> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & !N_PZ_203 & _old_PP_8<9>
+	# !MP<5> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & N_PZ_16 & !_old_PP_8<9>
+	# MR<4> & MR<3> & MP<4> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0008 & !_old_PP_8<9>
+	# MR<4> & MR<3> & !MP<4> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0008 & !_old_PP_8<9>;	// (17 pt, 12 inp)
+
+MACROCELL | 10 | 7 | N_PZ_86_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 9 | 10 | 5
+INPUTS | 3 | Maddsub_old_PP_12_addsub0000_or0008_xor0000  | Maddsub_old_PP_12_addsub0000__or0007  | _old_PP_11<8>
+INPUTMC | 3 | 5 | 8 | 5 | 9 | 4 | 12
+EQ | 6 | 
+   N_PZ_86 = !Maddsub_old_PP_12_addsub0000_or0008_xor0000 & 
+	Maddsub_old_PP_12_addsub0000__or0007
+	# !Maddsub_old_PP_12_addsub0000_or0008_xor0000 & 
+	_old_PP_11<8>
+	# Maddsub_old_PP_12_addsub0000__or0007 & 
+	_old_PP_11<8>;	// (3 pt, 3 inp)
+
+MACROCELL | 5 | 8 | Maddsub_old_PP_12_addsub0000_or0008_xor0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 7 | 10 | 10
+INPUTS | 6 | MP<2>  | N_PZ_29  | MP<1>  | MR<7>  | N_PZ_200  | N_PZ_199
+INPUTMC | 3 | 8 | 4 | 1 | 10 | 1 | 15
+INPUTP | 3 | 35 | 18 | 158
+EQ | 4 | 
+   Maddsub_old_PP_12_addsub0000_or0008_xor0000 = !MP<2> & N_PZ_29
+	# MP<1> & !MR<7> & N_PZ_200
+	# !MP<1> & MR<7> & N_PZ_199
+	# MP<2> & !MR<7> & !N_PZ_199 & !N_PZ_200;	// (4 pt, 6 inp)
+
+MACROCELL | 5 | 9 | Maddsub_old_PP_12_addsub0000__or0007_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 10 | 7 | 5 | 0 | 10 | 10
+INPUTS | 8 | MP<0>  | _old_PP_11<6>  | _old_PP_11<7>  | MR<7>  | N_PZ_200  | MP<1>  | N_PZ_29  | N_PZ_199
+INPUTMC | 5 | 3 | 14 | 4 | 15 | 1 | 10 | 8 | 4 | 1 | 15
+INPUTP | 3 | 17 | 158 | 18
+EQ | 11 | 
+   Maddsub_old_PP_12_addsub0000__or0007 = MP<0> & _old_PP_11<6> & _old_PP_11<7>
+	# !MP<0> & !MR<7> & N_PZ_200
+	# MP<1> & N_PZ_29 & _old_PP_11<7>
+	# MP<1> & N_PZ_200 & _old_PP_11<7>
+	# MP<0> & MP<1> & N_PZ_29 & _old_PP_11<6>
+	# MP<0> & MR<7> & N_PZ_199 & _old_PP_11<7>
+	# !MP<0> & MP<1> & !MR<7> & _old_PP_11<7>
+	# !MP<0> & !MP<1> & !MR<7> & !N_PZ_199
+	# !MP<1> & !MR<7> & !N_PZ_199 & _old_PP_11<7>
+	# !MP<1> & !MR<7> & !N_PZ_199 & !N_PZ_200 & 
+	_old_PP_11<6>;	// (10 pt, 8 inp)
+
+MACROCELL | 3 | 14 | _old_PP_11<6>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 5 | 9 | 9 | 2 | 5 | 0
+INPUTS | 12 | N_PZ_41  | _old_PP_8<6>  | N_PZ_191  | MP<1>  | Maddsub_old_PP_11_addsub0000__or0005  | N_PZ_203  | MP<2>  | N_PZ_130  | MR<4>  | MR<3>  | MR<5>  | N_PZ_16
+INPUTMC | 7 | 3 | 9 | 6 | 13 | 1 | 12 | 3 | 15 | 1 | 14 | 1 | 13 | 3 | 8
+INPUTP | 5 | 18 | 35 | 195 | 194 | 20
+EQ | 33 | 
+   _old_PP_11<6> = N_PZ_41 & _old_PP_8<6> & !N_PZ_191
+	# MP<1> & !Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_203 & !_old_PP_8<6>
+	# !MP<1> & Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_203 & !_old_PP_8<6>
+	# MP<2> & !Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_130 & _old_PP_8<6>
+	# !MP<2> & Maddsub_old_PP_11_addsub0000__or0005 & 
+	N_PZ_130 & _old_PP_8<6>
+	# MR<4> & MR<3> & MP<1> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & _old_PP_8<6>
+	# MR<4> & MR<3> & !MP<1> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & _old_PP_8<6>
+	# !MR<4> & !MR<3> & MP<1> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & _old_PP_8<6>
+	# !MR<4> & !MR<3> & !MP<1> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & _old_PP_8<6>
+	# MP<2> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & !N_PZ_203 & _old_PP_8<6>
+	# MP<2> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6> & N_PZ_16
+	# MP<2> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6> & N_PZ_16
+	# !MP<2> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6> & N_PZ_16
+	# !MP<2> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & !N_PZ_203 & _old_PP_8<6>
+	# !MP<2> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6> & N_PZ_16
+	# MR<4> & MR<3> & MP<1> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6>
+	# MR<4> & MR<3> & !MP<1> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0005 & !_old_PP_8<6>;	// (17 pt, 12 inp)
+
+MACROCELL | 4 | 15 | _old_PP_11<7>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 5 | 9 | 5 | 0
+INPUTS | 12 | N_PZ_41  | _old_PP_8<7>  | N_PZ_191  | MP<3>  | Maddsub_old_PP_11_addsub0000__or0006  | N_PZ_130  | MP<2>  | N_PZ_203  | MR<4>  | MR<3>  | MR<5>  | N_PZ_16
+INPUTMC | 7 | 3 | 9 | 7 | 6 | 1 | 12 | 3 | 12 | 1 | 13 | 1 | 14 | 3 | 8
+INPUTP | 5 | 34 | 35 | 195 | 194 | 20
+EQ | 33 | 
+   _old_PP_11<7> = N_PZ_41 & _old_PP_8<7> & !N_PZ_191
+	# MP<3> & !Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_130 & _old_PP_8<7>
+	# !MP<3> & Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_130 & _old_PP_8<7>
+	# MP<2> & !Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_203 & !_old_PP_8<7>
+	# !MP<2> & Maddsub_old_PP_11_addsub0000__or0006 & 
+	N_PZ_203 & !_old_PP_8<7>
+	# MR<4> & MR<3> & MP<2> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & _old_PP_8<7>
+	# MR<4> & MR<3> & !MP<2> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & _old_PP_8<7>
+	# !MR<4> & !MR<3> & MP<2> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & _old_PP_8<7>
+	# !MR<4> & !MR<3> & !MP<2> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & _old_PP_8<7>
+	# MP<3> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & !N_PZ_203 & _old_PP_8<7>
+	# MP<3> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & N_PZ_16 & !_old_PP_8<7>
+	# MP<3> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & N_PZ_16 & !_old_PP_8<7>
+	# !MP<3> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & N_PZ_16 & !_old_PP_8<7>
+	# !MP<3> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & !N_PZ_203 & _old_PP_8<7>
+	# !MP<3> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & N_PZ_16 & !_old_PP_8<7>
+	# MR<4> & MR<3> & MP<2> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0006 & !_old_PP_8<7>
+	# MR<4> & MR<3> & !MP<2> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0006 & !_old_PP_8<7>;	// (17 pt, 12 inp)
+
+MACROCELL | 4 | 12 | _old_PP_11<8>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 7 | 10 | 10
+INPUTS | 12 | N_PZ_41  | _old_PP_8<8>  | N_PZ_191  | MP<3>  | Maddsub_old_PP_11_addsub0000__or0007  | N_PZ_203  | MP<4>  | N_PZ_130  | MR<4>  | MR<3>  | MR<5>  | N_PZ_16
+INPUTMC | 7 | 3 | 9 | 2 | 9 | 1 | 12 | 4 | 14 | 1 | 14 | 1 | 13 | 3 | 8
+INPUTP | 5 | 34 | 162 | 195 | 194 | 20
+EQ | 33 | 
+   _old_PP_11<8> = N_PZ_41 & _old_PP_8<8> & !N_PZ_191
+	# MP<3> & !Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_203 & !_old_PP_8<8>
+	# !MP<3> & Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_203 & !_old_PP_8<8>
+	# MP<4> & !Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_130 & _old_PP_8<8>
+	# !MP<4> & Maddsub_old_PP_11_addsub0000__or0007 & 
+	N_PZ_130 & _old_PP_8<8>
+	# MR<4> & MR<3> & MP<3> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & _old_PP_8<8>
+	# MR<4> & MR<3> & !MP<3> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & _old_PP_8<8>
+	# !MR<4> & !MR<3> & MP<3> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & _old_PP_8<8>
+	# !MR<4> & !MR<3> & !MP<3> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & _old_PP_8<8>
+	# MP<4> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & !N_PZ_203 & _old_PP_8<8>
+	# MP<4> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & N_PZ_16 & !_old_PP_8<8>
+	# MP<4> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & N_PZ_16 & !_old_PP_8<8>
+	# !MP<4> & MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & N_PZ_16 & !_old_PP_8<8>
+	# !MP<4> & MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & !N_PZ_203 & _old_PP_8<8>
+	# !MP<4> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & N_PZ_16 & !_old_PP_8<8>
+	# MR<4> & MR<3> & MP<3> & !MR<5> & 
+	Maddsub_old_PP_11_addsub0000__or0007 & !_old_PP_8<8>
+	# MR<4> & MR<3> & !MP<3> & !MR<5> & 
+	!Maddsub_old_PP_11_addsub0000__or0007 & !_old_PP_8<8>;	// (17 pt, 12 inp)
+
+MACROCELL | 8 | 8 | N_PZ_198_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 9 | 5 | 1 | 8 | 3 | 9 | 0 | 9 | 1 | 10 | 11 | 10 | 12 | 5 | 0 | 10 | 10 | 10 | 5
+INPUTS | 3 | MR<7>  | N_PZ_200  | N_PZ_199
+INPUTMC | 2 | 1 | 10 | 1 | 15
+INPUTP | 1 | 158
+EQ | 2 | 
+   N_PZ_198 = MR<7> & !N_PZ_200
+	# !MR<7> & !N_PZ_199;	// (2 pt, 3 inp)
+
+MACROCELL | 8 | 3 | Product<11>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | _old_PP_11<11>  | N_PZ_198  | MP<5>  | MR<7>  | N_PZ_199  | Maddsub_old_PP_12_addsub0000__or0010  | N_PZ_200  | MP<4>
+INPUTMC | 5 | 1 | 7 | 8 | 8 | 1 | 15 | 5 | 10 | 1 | 10
+INPUTP | 3 | 161 | 158 | 162
+EQ | 28 | 
+   Product<11> = _old_PP_11<11>
+	$ !N_PZ_198 & _old_PP_11<11>
+	# MP<5> & MR<7> & !N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# MP<5> & !MR<7> & !N_PZ_200 & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<5> & MR<7> & !N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<5> & !MR<7> & !N_PZ_200 & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# MP<4> & MR<7> & N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# MP<4> & !MR<7> & N_PZ_200 & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# MP<4> & N_PZ_199 & _old_PP_11<11> & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# MP<4> & N_PZ_200 & _old_PP_11<11> & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<4> & MR<7> & N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<4> & !MR<7> & N_PZ_200 & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<4> & N_PZ_199 & _old_PP_11<11> & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# !MP<4> & N_PZ_200 & _old_PP_11<11> & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# MR<7> & !N_PZ_199 & N_PZ_200 & !_old_PP_11<11>
+	# !MR<7> & N_PZ_199 & !N_PZ_200 & !_old_PP_11<11>;	// (16 pt, 8 inp)
+
+MACROCELL | 1 | 7 | _old_PP_11<11>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 8 | 3 | 8 | 15
+INPUTS | 11 | N_PZ_41  | N_PZ_191  | _old_PP_8<11>  | Maddsub_old_PP_11_addsub0000__or0010  | N_PZ_131  | N_PZ_16  | N_PZ_42  | MP<7>  | MR<5>  | N_PZ_203  | N_PZ_130
+INPUTMC | 9 | 3 | 9 | 1 | 12 | 6 | 3 | 1 | 5 | 1 | 1 | 3 | 8 | 1 | 9 | 1 | 14 | 1 | 13
+INPUTP | 2 | 19 | 20
+EQ | 25 | 
+   _old_PP_11<11> = N_PZ_41 & !N_PZ_191 & _old_PP_8<11>
+	# Maddsub_old_PP_11_addsub0000__or0010 & 
+	_old_PP_8<11> & N_PZ_131
+	# !Maddsub_old_PP_11_addsub0000__or0010 & 
+	!_old_PP_8<11> & N_PZ_131
+	# N_PZ_16 & Maddsub_old_PP_11_addsub0000__or0010 & 
+	!_old_PP_8<11> & N_PZ_42
+	# N_PZ_16 & !Maddsub_old_PP_11_addsub0000__or0010 & 
+	!_old_PP_8<11> & !N_PZ_42
+	# MP<7> & N_PZ_16 & !N_PZ_191 & 
+	!Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11>
+	# !MP<7> & N_PZ_16 & !N_PZ_191 & 
+	Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11>
+	# MR<5> & !N_PZ_203 & 
+	Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11> & !N_PZ_42
+	# MR<5> & !N_PZ_203 & 
+	!Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11> & N_PZ_42
+	# !MR<5> & !N_PZ_130 & 
+	Maddsub_old_PP_11_addsub0000__or0010 & !_old_PP_8<11> & !N_PZ_131
+	# !MR<5> & !N_PZ_130 & 
+	!Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11> & !N_PZ_131
+	# !N_PZ_130 & N_PZ_203 & 
+	Maddsub_old_PP_11_addsub0000__or0010 & !_old_PP_8<11> & !N_PZ_131
+	# !N_PZ_130 & N_PZ_203 & 
+	!Maddsub_old_PP_11_addsub0000__or0010 & _old_PP_8<11> & !N_PZ_131;	// (13 pt, 11 inp)
+
+MACROCELL | 1 | 5 | Maddsub_old_PP_11_addsub0000__or0010_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 1 | 7 | 1 | 8
+INPUTS | 10 | _old_PP_8<10>  | Maddsub_old_PP_11_addsub0000__or0009  | MP<5>  | N_PZ_203  | MP<6>  | N_PZ_41  | MR<5>  | N_PZ_16  | MR<4>  | MR<3>
+INPUTMC | 5 | 6 | 8 | 7 | 3 | 1 | 14 | 3 | 9 | 3 | 8
+INPUTP | 5 | 161 | 160 | 20 | 195 | 194
+EQ | 14 | 
+   Maddsub_old_PP_11_addsub0000__or0010 = _old_PP_8<10> & 
+	Maddsub_old_PP_11_addsub0000__or0009
+	# MP<5> & _old_PP_8<10> & N_PZ_203
+	# MP<5> & Maddsub_old_PP_11_addsub0000__or0009 & 
+	N_PZ_203
+	# _old_PP_8<10> & MP<6> & N_PZ_41 & !N_PZ_203
+	# _old_PP_8<10> & !MP<6> & !MR<5> & N_PZ_16
+	# MP<6> & Maddsub_old_PP_11_addsub0000__or0009 & 
+	N_PZ_41 & !N_PZ_203
+	# !MP<6> & Maddsub_old_PP_11_addsub0000__or0009 & 
+	!MR<5> & N_PZ_16
+	# MR<4> & MR<3> & !MP<5> & _old_PP_8<10> & !MR<5>
+	# MR<4> & MR<3> & !MP<5> & 
+	Maddsub_old_PP_11_addsub0000__or0009 & !MR<5>;	// (9 pt, 10 inp)
+
+MACROCELL | 6 | 3 | _old_PP_8<11>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 1 | 7 | 1 | 8
+INPUTS | 4 | N_PZ_94  | _old_PP_8<12>  | MP<7>  | N_PZ_46
+INPUTMC | 3 | 6 | 1 | 6 | 7 | 7 | 9
+INPUTP | 1 | 19
+EQ | 3 | 
+   _old_PP_8<11> = N_PZ_94 & _old_PP_8<12>
+	# MP<7> & N_PZ_46 & _old_PP_8<12>
+	# !MP<7> & !N_PZ_46 & _old_PP_8<12>;	// (3 pt, 4 inp)
+
+MACROCELL | 6 | 7 | _old_PP_8<12>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 6 | 3 | 9 | 14 | 2 | 14 | 9 | 9 | 9 | 12
+INPUTS | 5 | _old_PP_8<10>  | N_PZ_94  | N_PZ_39  | N_PZ_38  | Maddsub_old_PP_8_addsub0000__or0009
+INPUTMC | 5 | 6 | 8 | 6 | 1 | 7 | 13 | 4 | 9 | 2 | 11
+EQ | 3 | 
+   _old_PP_8<12> = _old_PP_8<10> & N_PZ_94
+	# !N_PZ_39 & !N_PZ_38 & 
+	!Maddsub_old_PP_8_addsub0000__or0009;	// (2 pt, 5 inp)
+
+MACROCELL | 1 | 1 | N_PZ_131_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 1 | 7 | 1 | 8
+INPUTS | 5 | MP<6>  | N_PZ_203  | MR<4>  | MR<3>  | MR<5>
+INPUTMC | 1 | 1 | 14
+INPUTP | 4 | 160 | 195 | 194 | 20
+EQ | 2 | 
+   N_PZ_131 = MP<6> & N_PZ_203
+	# MR<4> & MR<3> & !MP<6> & !MR<5>;	// (2 pt, 5 inp)
+
+MACROCELL | 1 | 9 | N_PZ_42_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 1 | 7 | 9 | 14 | 9 | 12 | 9 | 10
+INPUTS | 2 | MP<7>  | MR<5>
+INPUTP | 2 | 19 | 20
+EQ | 2 | 
+   N_PZ_42 = MP<7> & !MR<5>
+	# !MP<7> & MR<5>;	// (2 pt, 2 inp)
+
+MACROCELL | 5 | 10 | Maddsub_old_PP_12_addsub0000__or0010_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 8 | 3 | 8 | 15
+INPUTS | 8 | _old_PP_11<10>  | Maddsub_old_PP_12_addsub0000__or0009  | MP<4>  | N_PZ_29  | MP<3>  | MR<7>  | N_PZ_199  | N_PZ_200
+INPUTMC | 5 | 1 | 6 | 10 | 9 | 8 | 4 | 1 | 15 | 1 | 10
+INPUTP | 3 | 162 | 34 | 158
+EQ | 17 | 
+   Maddsub_old_PP_12_addsub0000__or0010 = _old_PP_11<10> & 
+	Maddsub_old_PP_12_addsub0000__or0009
+	# _old_PP_11<10> & MP<4> & N_PZ_29
+	# MP<4> & Maddsub_old_PP_12_addsub0000__or0009 & 
+	N_PZ_29
+	# _old_PP_11<10> & MP<3> & MR<7> & N_PZ_199 & 
+	!N_PZ_200
+	# _old_PP_11<10> & !MP<3> & !MR<7> & !N_PZ_199 & 
+	N_PZ_200
+	# _old_PP_11<10> & !MP<4> & !MR<7> & !N_PZ_199 & 
+	!N_PZ_200
+	# MP<3> & MR<7> & N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009 & !N_PZ_200
+	# !MP<3> & !MR<7> & !N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009 & N_PZ_200
+	# !MP<4> & !MR<7> & !N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0009 & !N_PZ_200;	// (9 pt, 8 inp)
+
+MACROCELL | 9 | 0 | Product<12>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | _old_PP_11<12>  | N_PZ_198  | MP<5>  | MR<7>  | N_PZ_199  | Maddsub_old_PP_12_addsub0000__or0011  | N_PZ_200  | MP<6>
+INPUTMC | 5 | 9 | 14 | 8 | 8 | 1 | 15 | 8 | 15 | 1 | 10
+INPUTP | 3 | 161 | 158 | 160
+EQ | 28 | 
+   Product<12> = _old_PP_11<12>
+	$ !N_PZ_198 & _old_PP_11<12>
+	# MP<5> & MR<7> & N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# MP<5> & !MR<7> & N_PZ_200 & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# MP<5> & N_PZ_199 & _old_PP_11<12> & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# MP<5> & N_PZ_200 & _old_PP_11<12> & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<5> & MR<7> & N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<5> & !MR<7> & N_PZ_200 & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<5> & N_PZ_199 & _old_PP_11<12> & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<5> & N_PZ_200 & _old_PP_11<12> & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# MP<6> & MR<7> & !N_PZ_199 & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# MP<6> & !MR<7> & !N_PZ_200 & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<6> & MR<7> & !N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# !MP<6> & !MR<7> & !N_PZ_200 & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# MR<7> & !N_PZ_199 & N_PZ_200 & !_old_PP_11<12>
+	# !MR<7> & N_PZ_199 & !N_PZ_200 & !_old_PP_11<12>;	// (16 pt, 8 inp)
+
+MACROCELL | 9 | 14 | _old_PP_11<12>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 0 | 9 | 12 | 8 | 10
+INPUTS | 6 | N_PZ_41  | N_PZ_191  | _old_PP_8<12>  | N_PZ_42  | Maddsub_old_PP_11_addsub0000__or0011  | MP<7>
+INPUTMC | 5 | 3 | 9 | 1 | 12 | 6 | 7 | 1 | 9 | 1 | 8
+INPUTP | 1 | 19
+EQ | 13 | 
+   _old_PP_11<12> = N_PZ_41 & !N_PZ_191 & _old_PP_8<12>
+	# _old_PP_8<12> & N_PZ_42 & 
+	!Maddsub_old_PP_11_addsub0000__or0011
+	# _old_PP_8<12> & !N_PZ_42 & 
+	Maddsub_old_PP_11_addsub0000__or0011
+	# MP<7> & !N_PZ_41 & !_old_PP_8<12> & 
+	Maddsub_old_PP_11_addsub0000__or0011
+	# MP<7> & N_PZ_191 & !_old_PP_8<12> & 
+	!Maddsub_old_PP_11_addsub0000__or0011
+	# !MP<7> & !N_PZ_41 & !_old_PP_8<12> & 
+	!Maddsub_old_PP_11_addsub0000__or0011
+	# !MP<7> & N_PZ_191 & !_old_PP_8<12> & 
+	Maddsub_old_PP_11_addsub0000__or0011;	// (7 pt, 6 inp)
+
+MACROCELL | 1 | 8 | Maddsub_old_PP_11_addsub0000__or0011_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 9 | 14 | 9 | 9
+INPUTS | 8 | Maddsub_old_PP_11_addsub0000__or0010  | _old_PP_8<11>  | N_PZ_131  | MP<7>  | N_PZ_41  | N_PZ_203  | MR<5>  | N_PZ_16
+INPUTMC | 6 | 1 | 5 | 6 | 3 | 1 | 1 | 3 | 9 | 1 | 14 | 3 | 8
+INPUTP | 2 | 19 | 20
+EQ | 9 | 
+   Maddsub_old_PP_11_addsub0000__or0011 = !Maddsub_old_PP_11_addsub0000__or0010 & 
+	!_old_PP_8<11>
+	$ N_PZ_131
+	# Maddsub_old_PP_11_addsub0000__or0010 & 
+	_old_PP_8<11>
+	# !Maddsub_old_PP_11_addsub0000__or0010 & 
+	!_old_PP_8<11>
+	# MP<7> & N_PZ_41 & !N_PZ_203
+	# !MP<7> & !MR<5> & N_PZ_16;	// (6 pt, 8 inp)
+
+MACROCELL | 8 | 15 | Maddsub_old_PP_12_addsub0000__or0011_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 9 | 0 | 8 | 10
+INPUTS | 8 | _old_PP_11<11>  | Maddsub_old_PP_12_addsub0000__or0010  | MP<5>  | N_PZ_29  | MP<4>  | MR<7>  | N_PZ_199  | N_PZ_200
+INPUTMC | 5 | 1 | 7 | 5 | 10 | 8 | 4 | 1 | 15 | 1 | 10
+INPUTP | 3 | 161 | 162 | 158
+EQ | 10 | 
+   Maddsub_old_PP_12_addsub0000__or0011 = !_old_PP_11<11> & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	$ MP<5> & N_PZ_29
+	# _old_PP_11<11> & 
+	Maddsub_old_PP_12_addsub0000__or0010
+	# !_old_PP_11<11> & 
+	!Maddsub_old_PP_12_addsub0000__or0010
+	# MP<4> & MR<7> & N_PZ_199
+	# !MP<4> & !MR<7> & N_PZ_200
+	# !MP<5> & !MR<7> & !N_PZ_199 & !N_PZ_200;	// (7 pt, 8 inp)
+
+MACROCELL | 9 | 1 | Product<13>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 6 | N_PZ_198  | _old_PP_11<13>  | N_PZ_145  | N_PZ_224  | N_PZ_29  | MP<7>
+INPUTMC | 5 | 8 | 8 | 9 | 12 | 8 | 9 | 8 | 2 | 8 | 4
+INPUTP | 1 | 19
+EQ | 6 | 
+   !Product<13> = !N_PZ_198 & _old_PP_11<13>
+	# N_PZ_145 & N_PZ_224
+	# !N_PZ_29 & !N_PZ_145 & !N_PZ_224
+	# MP<7> & N_PZ_29 & N_PZ_198 & N_PZ_224
+	# !MP<7> & N_PZ_29 & _old_PP_11<13> & N_PZ_145
+	# !MP<7> & N_PZ_198 & !N_PZ_145 & !N_PZ_224;	// (6 pt, 6 inp)
+
+MACROCELL | 9 | 12 | _old_PP_11<13>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 2 | 9 | 1 | 8 | 6 | 8 | 7
+INPUTS | 8 | Maddsub_old_PP_11_addsub0000__or0013  | _old_PP_8<13>  | N_PZ_41  | N_PZ_191  | _old_PP_8<12>  | N_PZ_42  | _old_PP_11<12>  | N_PZ_49
+INPUTMC | 8 | 9 | 9 | 2 | 14 | 3 | 9 | 1 | 12 | 6 | 7 | 1 | 9 | 9 | 14 | 8 | 14
+EQ | 9 | 
+   _old_PP_11<13> = !Maddsub_old_PP_11_addsub0000__or0013 & 
+	_old_PP_8<13>
+	# N_PZ_41 & !N_PZ_191 & _old_PP_8<13>
+	# _old_PP_8<12> & !N_PZ_42 & _old_PP_8<13>
+	# _old_PP_8<12> & !_old_PP_11<12> & 
+	!Maddsub_old_PP_11_addsub0000__or0013
+	# !_old_PP_8<12> & !_old_PP_11<12> & _old_PP_8<13>
+	# _old_PP_11<12> & 
+	!Maddsub_old_PP_11_addsub0000__or0013 & N_PZ_49;	// (6 pt, 8 inp)
+
+MACROCELL | 9 | 9 | Maddsub_old_PP_11_addsub0000__or0013_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 12 | 9 | 10 | 9 | 8
+INPUTS | 4 | N_PZ_49  | _old_PP_8<12>  | Maddsub_old_PP_11_addsub0000__or0011  | _old_PP_8<13>
+INPUTMC | 4 | 8 | 14 | 6 | 7 | 1 | 8 | 2 | 14
+EQ | 5 | 
+   Maddsub_old_PP_11_addsub0000__or0013 = N_PZ_49
+	$ _old_PP_8<12> & 
+	Maddsub_old_PP_11_addsub0000__or0011 & !N_PZ_49 & _old_PP_8<13>
+	# !_old_PP_8<12> & 
+	!Maddsub_old_PP_11_addsub0000__or0011 & N_PZ_49 & !_old_PP_8<13>;	// (3 pt, 4 inp)
+
+MACROCELL | 8 | 14 | N_PZ_49_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 9 | 9 | 12 | 9 | 8
+INPUTS | 2 | MP<7>  | N_PZ_41
+INPUTMC | 1 | 3 | 9
+INPUTP | 1 | 19
+EQ | 2 | 
+   N_PZ_49 = MP<7> & N_PZ_41
+	# !MP<7> & !N_PZ_41;	// (2 pt, 2 inp)
+
+MACROCELL | 2 | 14 | _old_PP_8<13>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 9 | 9 | 9 | 12
+INPUTS | 14 | N_PZ_39  | N_PZ_38  | MR<0>  | MR<1>  | N_PZ_94  | MP<7>  | N_PZ_46  | Maddsub_old_PP_8_addsub0000__or0013  | N_PZ_150  | _old_PP_8<12>  | N_PZ_141  | MP<5>  | MP<6>  | N_PZ_37
+INPUTMC | 9 | 7 | 13 | 4 | 9 | 6 | 1 | 7 | 9 | 6 | 6 | 0 | 4 | 6 | 7 | 2 | 7 | 4 | 10
+INPUTP | 5 | 33 | 32 | 19 | 161 | 160
+EQ | 16 | 
+   _old_PP_8<13> = N_PZ_39 & !N_PZ_38
+	# !MR<0> & !MR<1> & N_PZ_39
+	# N_PZ_94 & MP<7> & N_PZ_46
+	# N_PZ_94 & MP<7> & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# N_PZ_94 & !N_PZ_46 & N_PZ_150
+	# N_PZ_94 & !_old_PP_8<12> & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# MP<7> & N_PZ_39 & N_PZ_141
+	# !N_PZ_38 & _old_PP_8<12> & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# !MR<1> & N_PZ_46 & _old_PP_8<12> & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# !MP<5> & N_PZ_94 & !MP<6> & N_PZ_37 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# !MP<5> & !MP<6> & N_PZ_37 & N_PZ_39 & N_PZ_141;	// (11 pt, 14 inp)
+
+MACROCELL | 0 | 4 | N_PZ_150_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 6 | 6 | 2 | 14 | 0 | 6 | 9 | 8
+INPUTS | 9 | N_PZ_94  | MP<7>  | N_PZ_46  | MR<2>  | N_PZ_38  | N_PZ_155  | MP<5>  | MP<6>  | N_PZ_37
+INPUTMC | 5 | 6 | 1 | 7 | 9 | 4 | 9 | 7 | 14 | 4 | 10
+INPUTP | 4 | 19 | 218 | 161 | 160
+EQ | 3 | 
+   N_PZ_150 = N_PZ_94 & MP<7> & N_PZ_46
+	# MR<2> & !N_PZ_38 & N_PZ_155
+	# !MP<5> & !MP<6> & N_PZ_37 & !N_PZ_38 & !N_PZ_46;	// (3 pt, 9 inp)
+
+MACROCELL | 6 | 6 | Maddsub_old_PP_8_addsub0000__or0013_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 2 | 14 | 0 | 6 | 9 | 8
+INPUTS | 7 | N_PZ_150  | N_PZ_94  | Maddsub_old_PP_8_addsub0000__or0009  | MP<7>  | N_PZ_46  | MR<3>  | MR<1>
+INPUTMC | 4 | 0 | 4 | 6 | 1 | 2 | 11 | 7 | 9
+INPUTP | 3 | 19 | 194 | 32
+EQ | 8 | 
+   Maddsub_old_PP_8_addsub0000__or0013 = N_PZ_150
+	# N_PZ_94 & Maddsub_old_PP_8_addsub0000__or0009
+	# N_PZ_94 & MP<7> & N_PZ_46
+	# MP<7> & Maddsub_old_PP_8_addsub0000__or0009 & 
+	N_PZ_46
+	# !MR<3> & N_PZ_94 & MR<1> & !MP<7>
+	# !MR<3> & MR<1> & !MP<7> & 
+	Maddsub_old_PP_8_addsub0000__or0009;	// (6 pt, 7 inp)
+
+MACROCELL | 8 | 9 | N_PZ_145_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 1 | 8 | 6 | 8 | 7
+INPUTS | 5 | MP<6>  | MR<7>  | N_PZ_199  | N_PZ_200  | MP<7>
+INPUTMC | 2 | 1 | 15 | 1 | 10
+INPUTP | 3 | 160 | 158 | 19
+EQ | 3 | 
+   N_PZ_145 = MP<6> & MR<7> & N_PZ_199
+	# !MP<6> & !MR<7> & N_PZ_200
+	# !MP<7> & !MR<7> & !N_PZ_199 & !N_PZ_200;	// (3 pt, 5 inp)
+
+MACROCELL | 8 | 2 | N_PZ_224_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 1 | 8 | 6 | 8 | 7
+INPUTS | 2 | _old_PP_11<13>  | Maddsub_old_PP_12_addsub0000__or0012
+INPUTMC | 2 | 9 | 12 | 8 | 10
+EQ | 4 | 
+   N_PZ_224 = _old_PP_11<13> & 
+	Maddsub_old_PP_12_addsub0000__or0012
+	# !_old_PP_11<13> & 
+	!Maddsub_old_PP_12_addsub0000__or0012;	// (2 pt, 2 inp)
+
+MACROCELL | 8 | 10 | Maddsub_old_PP_12_addsub0000__or0012_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 8 | 2
+INPUTS | 8 | _old_PP_11<12>  | Maddsub_old_PP_12_addsub0000__or0011  | MP<6>  | N_PZ_29  | MP<5>  | MR<7>  | N_PZ_199  | N_PZ_200
+INPUTMC | 5 | 9 | 14 | 8 | 15 | 8 | 4 | 1 | 15 | 1 | 10
+INPUTP | 3 | 160 | 161 | 158
+EQ | 10 | 
+   Maddsub_old_PP_12_addsub0000__or0012 = !_old_PP_11<12> & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	$ MP<6> & N_PZ_29
+	# _old_PP_11<12> & 
+	Maddsub_old_PP_12_addsub0000__or0011
+	# !_old_PP_11<12> & 
+	!Maddsub_old_PP_12_addsub0000__or0011
+	# MP<5> & MR<7> & N_PZ_199
+	# !MP<5> & !MR<7> & N_PZ_200
+	# !MP<6> & !MR<7> & !N_PZ_199 & !N_PZ_200;	// (7 pt, 8 inp)
+
+MACROCELL | 10 | 11 | Product<14>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | _old_PP_11<14>  | N_PZ_198  | N_PZ_311  | N_PZ_312
+INPUTMC | 4 | 9 | 10 | 8 | 8 | 8 | 6 | 8 | 7
+EQ | 3 | 
+   !Product<14> = _old_PP_11<14>
+	$ N_PZ_198 & !N_PZ_311
+	# N_PZ_198 & N_PZ_312;	// (3 pt, 4 inp)
+
+MACROCELL | 9 | 10 | _old_PP_11<14>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 10 | 11 | 9 | 8 | 10 | 12
+INPUTS | 6 | N_PZ_41  | N_PZ_191  | _old_PP_8<14>  | N_PZ_42  | Maddsub_old_PP_11_addsub0000__or0013  | MP<7>
+INPUTMC | 5 | 3 | 9 | 1 | 12 | 0 | 6 | 1 | 9 | 9 | 9
+INPUTP | 1 | 19
+EQ | 13 | 
+   _old_PP_11<14> = N_PZ_41 & !N_PZ_191 & _old_PP_8<14>
+	# N_PZ_42 & !Maddsub_old_PP_11_addsub0000__or0013 & 
+	_old_PP_8<14>
+	# !N_PZ_42 & Maddsub_old_PP_11_addsub0000__or0013 & 
+	_old_PP_8<14>
+	# MP<7> & !N_PZ_41 & 
+	Maddsub_old_PP_11_addsub0000__or0013 & !_old_PP_8<14>
+	# MP<7> & N_PZ_191 & 
+	!Maddsub_old_PP_11_addsub0000__or0013 & !_old_PP_8<14>
+	# !MP<7> & !N_PZ_41 & 
+	!Maddsub_old_PP_11_addsub0000__or0013 & !_old_PP_8<14>
+	# !MP<7> & N_PZ_191 & 
+	Maddsub_old_PP_11_addsub0000__or0013 & !_old_PP_8<14>;	// (7 pt, 6 inp)
+
+MACROCELL | 0 | 6 | _old_PP_8<14>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 9 | 10 | 9 | 8
+INPUTS | 15 | N_PZ_94  | N_PZ_39  | N_PZ_46  | N_PZ_150  | Maddsub_old_PP_8_addsub0000__or0013  | MR<0>  | MR<2>  | N_PZ_155  | MR<3>  | N_PZ_38  | MP<5>  | MR<1>  | N_PZ_141  | MP<6>  | N_PZ_37
+INPUTMC | 9 | 6 | 1 | 7 | 13 | 7 | 9 | 0 | 4 | 6 | 6 | 7 | 14 | 4 | 9 | 2 | 7 | 4 | 10
+INPUTP | 6 | 33 | 218 | 194 | 161 | 32 | 160
+EQ | 21 | 
+   _old_PP_8<14> = N_PZ_94 & N_PZ_39
+	# !N_PZ_46 & N_PZ_150 & 
+	Maddsub_old_PP_8_addsub0000__or0013
+	# MR<0> & MR<2> & N_PZ_155 & 
+	Maddsub_old_PP_8_addsub0000__or0013
+	# !MR<3> & N_PZ_94 & N_PZ_38 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# MP<5> & MR<1> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# N_PZ_94 & !N_PZ_38 & N_PZ_46 & 
+	Maddsub_old_PP_8_addsub0000__or0013
+	# !N_PZ_94 & !MR<2> & N_PZ_141 & 
+	Maddsub_old_PP_8_addsub0000__or0013
+	# MR<1> & MP<6> & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# MR<1> & !N_PZ_37 & !N_PZ_141 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# !MR<1> & !N_PZ_155 & !N_PZ_150 & 
+	!Maddsub_old_PP_8_addsub0000__or0013
+	# !MP<5> & !MP<6> & N_PZ_37 & N_PZ_141 & !N_PZ_150 & 
+	!Maddsub_old_PP_8_addsub0000__or0013;	// (11 pt, 15 inp)
+
+MACROCELL | 8 | 6 | N_PZ_311_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 11 | 10 | 12
+INPUTS | 6 | MP<7>  | MR<7>  | _old_PP_11<13>  | N_PZ_224  | N_PZ_145  | N_PZ_29
+INPUTMC | 4 | 9 | 12 | 8 | 2 | 8 | 9 | 8 | 4
+INPUTP | 2 | 19 | 158
+EQ | 5 | 
+   N_PZ_311 = MP<7> & MR<7>
+	# !MP<7> & !MR<7>
+	# !_old_PP_11<13> & N_PZ_224
+	# !MP<7> & !N_PZ_145 & !N_PZ_224
+	# !N_PZ_29 & !N_PZ_145 & !N_PZ_224;	// (5 pt, 6 inp)
+
+MACROCELL | 8 | 7 | N_PZ_312_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 10 | 11 | 10 | 12
+INPUTS | 6 | MP<7>  | MR<7>  | _old_PP_11<13>  | N_PZ_224  | N_PZ_145  | N_PZ_29
+INPUTMC | 4 | 9 | 12 | 8 | 2 | 8 | 9 | 8 | 4
+INPUTP | 2 | 19 | 158
+EQ | 4 | 
+   N_PZ_312 = MP<7> & MR<7> & !_old_PP_11<13> & N_PZ_224
+	# !MP<7> & !MR<7> & !_old_PP_11<13> & N_PZ_224
+	# !MP<7> & !MR<7> & !N_PZ_145 & !N_PZ_224
+	# MP<7> & MR<7> & !N_PZ_29 & !N_PZ_145 & !N_PZ_224;	// (4 pt, 6 inp)
+
+MACROCELL | 10 | 12 | Product<15>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 5 | _old_PP_11<15>  | N_PZ_198  | _old_PP_11<14>  | N_PZ_311  | N_PZ_312
+INPUTMC | 5 | 9 | 8 | 8 | 8 | 9 | 10 | 8 | 6 | 8 | 7
+EQ | 3 | 
+   !Product<15> = !_old_PP_11<15>
+	$ N_PZ_198 & _old_PP_11<14> & !N_PZ_311
+	# N_PZ_198 & !_old_PP_11<14> & N_PZ_312;	// (3 pt, 5 inp)
+
+MACROCELL | 9 | 8 | _old_PP_11<15>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 10 | 12
+INPUTS | 7 | Maddsub_old_PP_11_addsub0000__or0013  | N_PZ_150  | _old_PP_8<14>  | _old_PP_11<14>  | N_PZ_94  | N_PZ_49  | Maddsub_old_PP_8_addsub0000__or0013
+INPUTMC | 7 | 9 | 9 | 0 | 4 | 0 | 6 | 9 | 10 | 6 | 1 | 8 | 14 | 6 | 6
+EQ | 15 | 
+   _old_PP_11<15> = Maddsub_old_PP_11_addsub0000__or0013 & !N_PZ_150 & 
+	!_old_PP_8<14>
+	# !N_PZ_150 & !_old_PP_11<14> & !_old_PP_8<14>
+	# N_PZ_94 & !N_PZ_49 & !N_PZ_150 & !_old_PP_11<14>
+	# N_PZ_49 & N_PZ_150 & _old_PP_11<14> & 
+	!_old_PP_8<14>
+	# !N_PZ_49 & N_PZ_150 & !_old_PP_11<14> & 
+	_old_PP_8<14>
+	# !N_PZ_49 & !N_PZ_150 & 
+	!Maddsub_old_PP_8_addsub0000__or0013 & !_old_PP_11<14>
+	# !N_PZ_94 & !Maddsub_old_PP_11_addsub0000__or0013 & 
+	!N_PZ_150 & Maddsub_old_PP_8_addsub0000__or0013 & 
+	_old_PP_8<14>
+	# !N_PZ_94 & !N_PZ_150 & 
+	Maddsub_old_PP_8_addsub0000__or0013 & _old_PP_11<14> & _old_PP_8<14>;	// (8 pt, 7 inp)
+
+MACROCELL | 8 | 1 | Product<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | MP<0>  | MR<1>  | MR<0>  | MP<1>
+INPUTP | 4 | 17 | 32 | 33 | 18
+EQ | 2 | 
+   Product<1> = MP<0> & MR<1>
+	$ MR<0> & MP<1>;	// (2 pt, 4 inp)
+
+MACROCELL | 8 | 0 | Product<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 7 | MP<0>  | MR<2>  | MR<0>  | MP<2>  | MR<1>  | MP<1>  | N_PZ_28
+INPUTMC | 1 | 3 | 10
+INPUTP | 6 | 17 | 218 | 33 | 35 | 32 | 18
+EQ | 6 | 
+   Product<2> = MP<0> & MR<2>
+	$ MR<0> & MP<0> & MP<2>
+	# MR<0> & !MR<1> & MP<2>
+	# MR<0> & !MP<1> & MP<2>
+	# !MR<0> & MR<1> & MP<1>
+	# !MP<0> & MR<1> & !N_PZ_28 & !MP<2>;	// (6 pt, 7 inp)
+
+MACROCELL | 10 | 4 | Product<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | _old_PP_5<3>  | N_PZ_39  | Maddsub_old_PP_8_addsub0000__or0002  | Maddsub_old_PP_8_addsub0000_or0003_xor0000
+INPUTMC | 4 | 7 | 15 | 7 | 13 | 0 | 7 | 0 | 8
+EQ | 5 | 
+   !Product<3> = !_old_PP_5<3>
+	$ !N_PZ_39 & Maddsub_old_PP_8_addsub0000__or0002 & 
+	!Maddsub_old_PP_8_addsub0000_or0003_xor0000
+	# !N_PZ_39 & !Maddsub_old_PP_8_addsub0000__or0002 & 
+	Maddsub_old_PP_8_addsub0000_or0003_xor0000;	// (3 pt, 4 inp)
+
+MACROCELL | 3 | 1 | Product<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | _old_PP_8<4>  | MP<0>  | N_PZ_16
+INPUTMC | 2 | 10 | 6 | 3 | 8
+INPUTP | 1 | 17
+EQ | 2 | 
+   !Product<4> = _old_PP_8<4>
+	$ MP<0> & N_PZ_16;	// (2 pt, 3 inp)
+
+MACROCELL | 3 | 0 | Product<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 10 | MP<0>  | MP<1>  | _old_PP_8<5>  | N_PZ_16  | N_PZ_41  | N_PZ_191  | N_PZ_130  | N_PZ_203  | _old_PP_8<4>  | MR<5>
+INPUTMC | 7 | 0 | 14 | 3 | 8 | 3 | 9 | 1 | 12 | 1 | 13 | 1 | 14 | 10 | 6
+INPUTP | 3 | 17 | 18 | 20
+EQ | 21 | 
+   !Product<5> = !MP<0> & !MP<1> & _old_PP_8<5>
+	# !MP<0> & _old_PP_8<5> & !N_PZ_16
+	# N_PZ_41 & _old_PP_8<5> & !N_PZ_191
+	# MP<0> & !N_PZ_41 & !_old_PP_8<5> & !N_PZ_130
+	# MP<0> & !_old_PP_8<5> & !N_PZ_130 & N_PZ_203
+	# !MP<0> & MP<1> & !_old_PP_8<5> & N_PZ_16
+	# !MP<1> & _old_PP_8<4> & _old_PP_8<5> & N_PZ_130
+	# MP<0> & MP<1> & !_old_PP_8<4> & _old_PP_8<5> & 
+	N_PZ_130
+	# MP<0> & !MP<1> & !N_PZ_41 & !_old_PP_8<4> & 
+	!_old_PP_8<5>
+	# MP<0> & !MP<1> & _old_PP_8<4> & !_old_PP_8<5> & 
+	N_PZ_191
+	# MP<1> & !N_PZ_41 & _old_PP_8<4> & !_old_PP_8<5> & 
+	N_PZ_130
+	# !MP<1> & MR<5> & !_old_PP_8<4> & _old_PP_8<5> & 
+	!N_PZ_203
+	# MP<0> & MP<1> & MR<5> & _old_PP_8<4> & 
+	_old_PP_8<5> & !N_PZ_203
+	# MP<1> & MR<5> & !_old_PP_8<4> & !_old_PP_8<5> & 
+	!N_PZ_203 & N_PZ_191;	// (14 pt, 10 inp)
+
+MACROCELL | 9 | 2 | Product<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | _old_PP_11<6>  | MP<0>  | N_PZ_199  | N_PZ_200
+INPUTMC | 3 | 3 | 14 | 1 | 15 | 1 | 10
+INPUTP | 1 | 17
+EQ | 2 | 
+   !Product<6> = _old_PP_11<6>
+	$ MP<0> & !N_PZ_199 & !N_PZ_200;	// (2 pt, 4 inp)
+
+MACROCELL | 5 | 0 | Product<7>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 10 | Maddsub_old_PP_12_addsub0000__or0007  | _old_PP_11<7>  | N_PZ_198  | MP<0>  | MP<1>  | N_PZ_200  | N_PZ_199  | N_PZ_29  | _old_PP_11<6>  | MR<7>
+INPUTMC | 7 | 5 | 9 | 4 | 15 | 8 | 8 | 1 | 10 | 1 | 15 | 8 | 4 | 3 | 14
+INPUTP | 3 | 17 | 18 | 158
+EQ | 20 | 
+   !Product<7> = !Maddsub_old_PP_12_addsub0000__or0007 & 
+	_old_PP_11<7>
+	# _old_PP_11<7> & !N_PZ_198
+	# !MP<0> & !MP<1> & _old_PP_11<7>
+	# !MP<0> & N_PZ_200 & _old_PP_11<7>
+	# MP<0> & N_PZ_199 & !N_PZ_29 & 
+	!Maddsub_old_PP_12_addsub0000__or0007
+	# MP<0> & !N_PZ_29 & N_PZ_200 & !_old_PP_11<7>
+	# MP<0> & !Maddsub_old_PP_12_addsub0000__or0007 & 
+	_old_PP_11<6> & N_PZ_198
+	# MP<1> & N_PZ_29 & 
+	!Maddsub_old_PP_12_addsub0000__or0007 & N_PZ_198
+	# !MP<1> & !MR<7> & !N_PZ_199 & 
+	!Maddsub_old_PP_12_addsub0000__or0007
+	# MP<0> & MP<1> & N_PZ_29 & _old_PP_11<6> & 
+	_old_PP_11<7>
+	# !MP<0> & MP<1> & !N_PZ_199 & !N_PZ_200 & 
+	!Maddsub_old_PP_12_addsub0000__or0007
+	# !MP<1> & !MR<7> & !N_PZ_200 & _old_PP_11<6> & 
+	_old_PP_11<7>;	// (12 pt, 10 inp)
+
+MACROCELL | 10 | 10 | Product<8>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | _old_PP_11<8>  | Maddsub_old_PP_12_addsub0000_or0008_xor0000  | Maddsub_old_PP_12_addsub0000__or0007  | N_PZ_198
+INPUTMC | 4 | 4 | 12 | 5 | 8 | 5 | 9 | 8 | 8
+EQ | 5 | 
+   !Product<8> = _old_PP_11<8>
+	$ Maddsub_old_PP_12_addsub0000_or0008_xor0000 & 
+	Maddsub_old_PP_12_addsub0000__or0007 & N_PZ_198
+	# !Maddsub_old_PP_12_addsub0000_or0008_xor0000 & 
+	!Maddsub_old_PP_12_addsub0000__or0007 & N_PZ_198;	// (3 pt, 4 inp)
+
+MACROCELL | 10 | 5 | Product<9>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | _old_PP_11<9>  | Maddsub_old_PP_12_addsub0000_or0009_xor0000  | N_PZ_86  | N_PZ_198
+INPUTMC | 4 | 10 | 2 | 5 | 7 | 10 | 7 | 8 | 8
+EQ | 5 | 
+   !Product<9> = _old_PP_11<9>
+	$ Maddsub_old_PP_12_addsub0000_or0009_xor0000 & 
+	N_PZ_86 & N_PZ_198
+	# !Maddsub_old_PP_12_addsub0000_or0009_xor0000 & 
+	!N_PZ_86 & N_PZ_198;	// (3 pt, 4 inp)
+
+PIN | MP<0> | 64 | 16 | LVCMOS18 | 17 | 13 | 7 | 0 | 3 | 10 | 7 | 15 | 0 | 7 | 0 | 8 | 3 | 15 | 5 | 9 | 8 | 1 | 8 | 0 | 3 | 1 | 3 | 0 | 9 | 2 | 5 | 0
+PIN | MP<1> | 64 | 16 | LVCMOS18 | 18 | 14 | 3 | 10 | 0 | 9 | 7 | 15 | 0 | 7 | 0 | 8 | 3 | 15 | 3 | 12 | 5 | 8 | 3 | 14 | 5 | 9 | 8 | 1 | 8 | 0 | 3 | 0 | 5 | 0
+PIN | MP<2> | 64 | 16 | LVCMOS18 | 35 | 13 | 3 | 10 | 0 | 9 | 7 | 15 | 0 | 7 | 0 | 10 | 0 | 14 | 3 | 12 | 4 | 14 | 5 | 7 | 5 | 8 | 3 | 14 | 4 | 15 | 8 | 0
+PIN | MP<3> | 64 | 16 | LVCMOS18 | 34 | 14 | 4 | 10 | 7 | 15 | 6 | 14 | 0 | 10 | 7 | 8 | 0 | 14 | 6 | 13 | 4 | 14 | 4 | 11 | 5 | 7 | 4 | 15 | 4 | 12 | 5 | 1 | 5 | 10
+PIN | MP<4> | 64 | 16 | LVCMOS18 | 162 | 15 | 4 | 10 | 6 | 14 | 6 | 15 | 7 | 8 | 7 | 7 | 6 | 13 | 7 | 6 | 4 | 11 | 7 | 3 | 10 | 2 | 4 | 12 | 5 | 1 | 5 | 10 | 8 | 3 | 8 | 15
+PIN | MP<5> | 64 | 16 | LVCMOS18 | 161 | 19 | 6 | 1 | 6 | 0 | 6 | 15 | 7 | 7 | 2 | 12 | 2 | 8 | 7 | 6 | 2 | 9 | 7 | 3 | 1 | 6 | 10 | 2 | 1 | 5 | 8 | 3 | 8 | 15 | 9 | 0 | 0 | 4 | 2 | 14 | 8 | 10 | 0 | 6
+PIN | MP<6> | 64 | 16 | LVCMOS18 | 160 | 17 | 6 | 1 | 6 | 0 | 6 | 2 | 2 | 12 | 2 | 8 | 2 | 11 | 2 | 9 | 2 | 10 | 1 | 6 | 1 | 5 | 1 | 1 | 9 | 0 | 0 | 4 | 2 | 14 | 8 | 9 | 8 | 10 | 0 | 6
+PIN | MP<7> | 64 | 16 | LVCMOS18 | 19 | 19 | 6 | 1 | 4 | 9 | 6 | 2 | 2 | 12 | 2 | 11 | 6 | 3 | 1 | 9 | 1 | 7 | 1 | 8 | 9 | 14 | 8 | 14 | 0 | 4 | 6 | 6 | 2 | 14 | 8 | 9 | 9 | 1 | 9 | 10 | 8 | 6 | 8 | 7
+PIN | MR<0> | 64 | 16 | LVCMOS18 | 33 | 13 | 7 | 0 | 6 | 1 | 6 | 0 | 7 | 15 | 6 | 14 | 0 | 7 | 6 | 15 | 6 | 2 | 2 | 12 | 2 | 14 | 0 | 6 | 8 | 1 | 8 | 0
+PIN | MR<1> | 64 | 16 | LVCMOS18 | 32 | 18 | 6 | 1 | 7 | 13 | 2 | 7 | 6 | 0 | 7 | 9 | 7 | 14 | 7 | 15 | 6 | 14 | 0 | 7 | 6 | 15 | 6 | 2 | 2 | 12 | 2 | 10 | 6 | 6 | 2 | 14 | 0 | 6 | 8 | 1 | 8 | 0
+PIN | MR<2> | 64 | 16 | LVCMOS18 | 218 | 9 | 7 | 13 | 2 | 7 | 7 | 9 | 7 | 14 | 0 | 7 | 2 | 10 | 0 | 4 | 0 | 6 | 8 | 0
+PIN | MR<3> | 64 | 16 | LVCMOS18 | 194 | 36 | 7 | 13 | 4 | 9 | 2 | 7 | 7 | 9 | 7 | 14 | 0 | 9 | 0 | 7 | 0 | 8 | 0 | 10 | 7 | 8 | 7 | 7 | 2 | 8 | 2 | 11 | 3 | 9 | 0 | 14 | 1 | 13 | 1 | 14 | 6 | 13 | 3 | 8 | 3 | 12 | 7 | 6 | 4 | 14 | 2 | 9 | 4 | 11 | 2 | 10 | 7 | 3 | 1 | 12 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 1 | 6 | 6 | 0 | 6
+PIN | MR<4> | 64 | 16 | LVCMOS18 | 195 | 16 | 3 | 9 | 1 | 13 | 1 | 14 | 3 | 8 | 3 | 12 | 4 | 14 | 4 | 11 | 7 | 3 | 1 | 12 | 1 | 6 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 1
+PIN | MR<5> | 64 | 16 | LVCMOS18 | 20 | 22 | 3 | 9 | 1 | 13 | 1 | 14 | 3 | 15 | 3 | 12 | 4 | 14 | 4 | 11 | 7 | 3 | 1 | 12 | 1 | 6 | 1 | 15 | 1 | 10 | 10 | 2 | 3 | 14 | 4 | 15 | 4 | 12 | 1 | 5 | 1 | 1 | 1 | 9 | 1 | 7 | 1 | 8 | 3 | 0
+PIN | MR<6> | 64 | 16 | LVCMOS18 | 1 | 2 | 1 | 15 | 1 | 10
+PIN | MR<7> | 64 | 16 | LVCMOS18 | 158 | 15 | 8 | 4 | 5 | 7 | 5 | 8 | 5 | 9 | 8 | 8 | 5 | 1 | 5 | 10 | 8 | 3 | 8 | 15 | 9 | 0 | 8 | 9 | 8 | 10 | 8 | 6 | 8 | 7 | 5 | 0
+PIN | Product<0> | 536871040 | 0 | LVCMOS18 | 68
+PIN | Product<10> | 536871040 | 0 | LVCMOS18 | 55
+PIN | Product<11> | 536871040 | 0 | LVCMOS18 | 171
+PIN | Product<12> | 536871040 | 0 | LVCMOS18 | 167
+PIN | Product<13> | 536871040 | 0 | LVCMOS18 | 166
+PIN | Product<14> | 536871040 | 0 | LVCMOS18 | 191
+PIN | Product<15> | 536871040 | 0 | LVCMOS18 | 192
+PIN | Product<1> | 536871040 | 0 | LVCMOS18 | 169
+PIN | Product<2> | 536871040 | 0 | LVCMOS18 | 168
+PIN | Product<3> | 536871040 | 0 | LVCMOS18 | 186
+PIN | Product<4> | 536871040 | 0 | LVCMOS18 | 16
+PIN | Product<5> | 536871040 | 0 | LVCMOS18 | 15
+PIN | Product<6> | 536871040 | 0 | LVCMOS18 | 163
+PIN | Product<7> | 536871040 | 0 | LVCMOS18 | 54
+PIN | Product<8> | 536871040 | 0 | LVCMOS18 | 190
+PIN | Product<9> | 536871040 | 0 | LVCMOS18 | 187

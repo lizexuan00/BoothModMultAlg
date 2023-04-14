@@ -1,0 +1,214 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(56/56), Fanin(23/38), Clk(0/3), Bct(0/4), Pin(1/6), Mcell(8/16)
+PLApts[56/56] 449 450 451 452 453 454 455 456 457 463 464 465 466 467 468 469 470 439 440 441 442 458 459 460 461 462 414 419 422 425 413 418 421 424 46 404 405 406 410 411 412 550 574 575 576 577 579 580 584 585 596 603 545 551 594 416
+Fanins[23] Maddsub_old_PP_8_addsub0000__or0004.n Maddsub_old_PP_8_addsub0000__or0013.n N_PZ_141.n N_PZ_150.n N_PZ_155.n N_PZ_197.n N_PZ_37.n N_PZ_38.n N_PZ_39.n N_PZ_46.n N_PZ_94.n _old_PP_5<5>.n MP<0>.p MP<1>.p MP<2>.p MP<3>.p MP<5>.p MP<6>.p MP<7>.p MR<0>.p MR<1>.p MR<2>.p MR<3>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 9] [MR<2>(143)] [N_PZ_197(160)] [_old_PP_8<5>(159)] [Maddsub_old_PP_8_addsub0000__or0005(155)]  
+           [Maddsub_old_PP_8_addsub0000_or0004_xor0000(154)]  
+           [Maddsub_old_PP_8_addsub0000_or0003_xor0000(153)] [Maddsub_old_PP_8_addsub0000__or0002(152)]  
+           [_old_PP_8<14>(151)] [N_PZ_150(149)] 
+Signal[ 9] [ 0:  ][ 1:  ][ 2: MR<2>(143)  ][ 3: (142)  ][ 4: N_PZ_150(149)  ][ 5: (140)  ][ 6:  
+           _old_PP_8<14>(151)  ][ 7: Maddsub_old_PP_8_addsub0000__or0002(152)  ][ 8:  
+           Maddsub_old_PP_8_addsub0000_or0003_xor0000(153)  ][ 9:  
+           Maddsub_old_PP_8_addsub0000_or0004_xor0000(154)  ][ 10: Maddsub_old_PP_8_addsub0000__or0005(155)  
+            ][ 11: (139)  ][ 12: (138)  ][ 13: (137)  ][ 14: _old_PP_8<5>(159)  ][ 15: N_PZ_197(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(56/56), Fanin(20/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(12/16)
+PLApts[56/56] 20 24 93 116 229 231 234 235 236 237 238 239 628 629 630 634 635 638 639 206 207 208 209 211 212 215 216 217 218 219 220 221 222 223 230 224 622 64 90 95 10 119 204 557 205 210 213 214 61 88 2 6 9 1 5 11
+Fanins[20] Maddsub_old_PP_11_addsub0000__or0009.n Maddsub_old_PP_11_addsub0000__or0010.n Maddsub_old_PP_8_addsub0000__or0008.n N_PZ_130.n N_PZ_131.n N_PZ_16.n N_PZ_191.n N_PZ_203.n N_PZ_41.n N_PZ_42.n N_PZ_94.n _old_PP_8<10>.n _old_PP_8<11>.n MP<5>.p MP<6>.p MP<7>.p MR<3>.p MR<4>.p MR<5>.p MR<6>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [MR<6>(2)] [N_PZ_199(176)] [N_PZ_200(171)] [N_PZ_42(170)]  
+           [Maddsub_old_PP_11_addsub0000__or0011(169)] [_old_PP_11<11>(168)] [_old_PP_11<10>(167)]  
+           [Maddsub_old_PP_11_addsub0000__or0010(166)] [N_PZ_131(162)] [N_PZ_203(175)] [N_PZ_130(174)]  
+           [N_PZ_191(173)] [N_PZ_231(172)] 
+Signal[13] [ 0: MR<6>(2)  ][ 1: N_PZ_131(162)  ][ 2: (3)  ][ 3: (4)  ][ 4: (5)  ][ 5:  
+           Maddsub_old_PP_11_addsub0000__or0010(166)  ][ 6: _old_PP_11<10>(167)  ][ 7: _old_PP_11<11>(168)  ] 
+           [ 8: Maddsub_old_PP_11_addsub0000__or0011(169)  ][ 9: N_PZ_42(170)  ][ 10: N_PZ_200(171)  ][ 11:  
+           N_PZ_231(172) (6)  ][ 12: N_PZ_191(173) (7)  ][ 13: N_PZ_130(174) (9)  ][ 14: N_PZ_203(175) (10)  
+            ][ 15: N_PZ_199(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(56/56), Fanin(23/38), Clk(0/3), Bct(0/4), Pin(0/6), Mcell(7/16)
+PLApts[56/56] 401 409 544 551 573 578 581 582 583 593 595 554 591 552 558 559 560 561 562 550 608 609 610 611 612 613 614 615 522 523 524 525 526 527 528 529 530 536 537 538 539 540 541 542 543 518 519 520 521 531 532 533 534 535 12 14
+Fanins[23] Maddsub_old_PP_8_addsub0000__or0007.n Maddsub_old_PP_8_addsub0000__or0008.n Maddsub_old_PP_8_addsub0000__or0013.n N_PZ_141.n N_PZ_150.n N_PZ_155.n N_PZ_195.n N_PZ_197.n N_PZ_231.n N_PZ_37.n N_PZ_38.n N_PZ_39.n N_PZ_46.n N_PZ_94.n _old_PP_5<8>.n _old_PP_8<12>.n MP<5>.p MP<6>.p MP<7>.p MR<0>.p MR<1>.p MR<2>.p MR<3>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 7] [_old_PP_8<13>(191)] [_old_PP_5<8>(189)] [Maddsub_old_PP_8_addsub0000__or0009(188)]  
+           [_old_PP_8<9>(187)] [_old_PP_8<8>(186)] [Maddsub_old_PP_8_addsub0000__or0008(185)]  
+           [N_PZ_141(184)] 
+Signal[ 7] [ 0: (136)  ][ 1: (135)  ][ 2: (134)  ][ 3:  ][ 4: (133)  ][ 5:  ][ 6:  ][ 7: N_PZ_141(184)  ] 
+           [ 8: Maddsub_old_PP_8_addsub0000__or0008(185)  ][ 9: _old_PP_8<8>(186)  ][ 10: _old_PP_8<9>(187)  
+            ][ 11: Maddsub_old_PP_8_addsub0000__or0009(188)  ][ 12: _old_PP_5<8>(189)  ][ 13: (132)  ][ 14:  
+           _old_PP_8<13>(191)  ][ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(56/56), Fanin(15/38), Clk(0/3), Bct(0/4), Pin(6/8), Mcell(8/16)
+PLApts[56/56] 117 75 79 81 82 84 86 92 97 98 121 128 616 65 617 623 76 78 80 83 85 91 96 99 102 103 104 105 106 107 109 110 112 113 114 115 123 124 125 126 53 624 63 89 94 100 101 108 111 118 122 0 8 4 7 73
+Fanins[15] Maddsub_old_PP_11_addsub0000__or0005.n N_PZ_130.n N_PZ_16.n N_PZ_191.n N_PZ_203.n N_PZ_41.n _old_PP_8<4>.n _old_PP_8<5>.n _old_PP_8<6>.n MP<0>.p MP<1>.p MP<2>.p MR<3>.p MR<4>.p MR<5>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[12] [Product<4>(194),Product<4>(12)] [Product<5>(193),Product<5>(11)] [MP<0>(13)] [MP<1>(14)]  
+           [MP<7>(15)] [MR<5>(16)] [Maddsub_old_PP_11_addsub0000__or0005(208)] [_old_PP_11<6>(207)]  
+           [Maddsub_old_PP_11_addsub0000__or0006(205)] [N_PZ_28(203)] [N_PZ_41(202)] [N_PZ_16(201)] 
+Signal[12] [ 0: Product<5>(193) Product<5>(11)  ][ 1: Product<4>(194) Product<4>(12)  ][ 2: MP<0>(13)  ][ 3:  
+           MP<1>(14)  ][ 4: MP<7>(15)  ][ 5: MR<5>(16)  ][ 6:  ][ 7:  ][ 8: N_PZ_16(201)  ][ 9: N_PZ_41(202)  
+            ][ 10: N_PZ_28(203)  ][ 11: (17)  ][ 12: Maddsub_old_PP_11_addsub0000__or0006(205)  ][ 13: (18)  
+            ][ 14: _old_PP_11<6>(207)  ][ 15: Maddsub_old_PP_11_addsub0000__or0005(208)  ]
+----------------- B l o c k 4 ------------------
+PLApt(55/56), Fanin(17/38), Clk(0/3), Bct(0/4), Pin(0/5), Mcell(6/16)
+PLApts[55/55] 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 625 129 130 131 132 133 134 135 136 137 163 164 165 166 167 168 169 170 171 172 173 174 175 176 659 177 178 626 154 155 156 157 158 159 160 161 162 21 25
+Fanins[17] Maddsub_old_PP_11_addsub0000__or0006.n Maddsub_old_PP_11_addsub0000__or0007.n N_PZ_130.n N_PZ_16.n N_PZ_191.n N_PZ_203.n N_PZ_28.n N_PZ_41.n _old_PP_8<7>.n _old_PP_8<8>.n MP<2>.p MP<3>.p MP<4>.p MP<7>.p MR<3>.p MR<4>.p MR<5>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [_old_PP_11<7>(224)] [Maddsub_old_PP_11_addsub0000__or0007(223)] [_old_PP_11<8>(221)]  
+           [Maddsub_old_PP_11_addsub0000__or0008(220)] [N_PZ_37(219)] [N_PZ_38(218)] 
+Signal[ 6] [ 0:  ][ 1: (33)  ][ 2:  ][ 3: (32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  
+           N_PZ_38(218)  ][ 10: N_PZ_37(219)  ][ 11: Maddsub_old_PP_11_addsub0000__or0008(220)  ][ 12:  
+           _old_PP_11<8>(221)  ][ 13: (28)  ][ 14: Maddsub_old_PP_11_addsub0000__or0007(223)  ][ 15:  
+           _old_PP_11<7>(224)  ]
+----------------- B l o c k 5 ------------------
+PLApt(55/56), Fanin(15/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(6/16)
+PLApts[55/55] 315 316 317 319 322 323 324 325 331 332 333 334 336 335 337 720 293 297 300 301 302 304 305 306 307 673 675 718 314 318 320 321 326 327 328 329 330 264 267 286 288 292 294 295 296 298 299 249 255 268 280 250 256 269 281
+Fanins[15] Maddsub_old_PP_12_addsub0000__or0007.n Maddsub_old_PP_12_addsub0000__or0009.n N_PZ_198.n N_PZ_199.n N_PZ_200.n N_PZ_29.n _old_PP_11<10>.n _old_PP_11<6>.n _old_PP_11<7>.n MP<0>.p MP<1>.p MP<2>.p MP<3>.p MP<4>.p MR<7>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [Product<10>(226),Product<10>(35)] [Product<7>(225),Product<7>(34)]  
+           [Maddsub_old_PP_12_addsub0000__or0010(235)] [Maddsub_old_PP_12_addsub0000__or0007(234)]  
+           [Maddsub_old_PP_12_addsub0000_or0008_xor0000(233)]  
+           [Maddsub_old_PP_12_addsub0000_or0009_xor0000(232)] 
+Signal[ 6] [ 0: Product<7>(225) Product<7>(34)  ][ 1: Product<10>(226) Product<10>(35)  ][ 2:  ][ 3: (38)  ] 
+           [ 4:  ][ 5:  ][ 6:  ][ 7: Maddsub_old_PP_12_addsub0000_or0009_xor0000(232)  ][ 8:  
+           Maddsub_old_PP_12_addsub0000_or0008_xor0000(233)  ][ 9: Maddsub_old_PP_12_addsub0000__or0007(234)  
+            ][ 10: Maddsub_old_PP_12_addsub0000__or0010(235)  ][ 11: (39)  ][ 12: (40)  ][ 13: (41)  ][ 14:  
+           (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+PLApt(56/56), Fanin(25/38), Clk(0/3), Bct(0/4), Pin(4/8), Mcell(11/16)
+PLApts[56/56] 553 556 565 569 548 547 551 563 564 566 59 572 407 408 549 69 70 555 592 601 23 27 28 590 16 587 598 58 597 599 662 663 56 57 546 67 660 661 671 403 472 473 475 476 477 479 481 482 484 485 486 487 488 489 490 491
+Fanins[25] Maddsub_old_PP_8_addsub0000__or0005.n Maddsub_old_PP_8_addsub0000__or0008.n Maddsub_old_PP_8_addsub0000__or0009.n N_PZ_141.n N_PZ_150.n N_PZ_155.n N_PZ_28.n N_PZ_37.n N_PZ_38.n N_PZ_39.n N_PZ_46.n N_PZ_94.n _old_PP_5<3>.n _old_PP_5<4>.n _old_PP_5<6>.n _old_PP_8<10>.n _old_PP_8<12>.n MP<3>.p MP<4>.p MP<5>.p MP<6>.p MP<7>.p MR<0>.p MR<1>.p MR<3>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [MP<2>(26)] [MP<3>(25)] [MR<0>(24)] [MR<1>(23)] [N_PZ_195(250)] [_old_PP_8<10>(249)]  
+           [_old_PP_8<12>(248)] [Maddsub_old_PP_8_addsub0000__or0013(247)] [_old_PP_8<11>(244)]  
+           [_old_PP_5<7>(243)] [N_PZ_94(242)] [_old_PP_5<6>(241)] [_old_PP_5<5>(256)] [_old_PP_5<4>(255)]  
+           [_old_PP_8<6>(254)] 
+Signal[15] [ 0: _old_PP_5<6>(241)  ][ 1: N_PZ_94(242)  ][ 2: _old_PP_5<7>(243)  ][ 3: _old_PP_8<11>(244)  ] 
+           [ 4: MP<2>(26)  ][ 5: MP<3>(25)  ][ 6: Maddsub_old_PP_8_addsub0000__or0013(247)  ][ 7:  
+           _old_PP_8<12>(248)  ][ 8: _old_PP_8<10>(249)  ][ 9: N_PZ_195(250)  ][ 10: MR<0>(24)  ][ 11:  
+           MR<1>(23)  ][ 12: (22)  ][ 13: _old_PP_8<6>(254) (21)  ][ 14: _old_PP_5<4>(255) (20)  ][ 15:  
+           _old_PP_5<5>(256) (19)  ]
+----------------- B l o c k 7 ------------------
+PLApt(55/56), Fanin(27/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(9/16)
+PLApts[55/56] 54 666 667 13 17 15 19 3 18 415 31 420 423 426 471 474 478 480 483 492 493 494 495 505 506 507 508 509 496 497 498 499 500 501 502 503 504 510 511 512 513 514 515 516 517 179 180 181 182 183 184 185 186 187 () 664
+Fanins[27] Maddsub_old_PP_11_addsub0000__or0008.n Maddsub_old_PP_8_addsub0000__or0005.n Maddsub_old_PP_8_addsub0000__or0006.n N_PZ_141.n N_PZ_155.n N_PZ_16.n N_PZ_197.n N_PZ_203.n N_PZ_28.n N_PZ_39.n N_PZ_41.n N_PZ_46.n _old_PP_5<6>.n _old_PP_5<7>.n _old_PP_8<9>.n MP<0>.p MP<1>.p MP<2>.p MP<3>.p MP<4>.p MP<5>.p MR<0>.p MR<1>.p MR<2>.p MR<3>.p MR<4>.p MR<5>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 9] [Product<0>(257),Product<0>(44)] [_old_PP_5<3>(272)] [N_PZ_155(271)] [N_PZ_39(270)]  
+           [N_PZ_46(266)] [Maddsub_old_PP_8_addsub0000__or0006(265)]  
+           [Maddsub_old_PP_8_addsub0000__or0007(264)] [_old_PP_8<7>(263)]  
+           [Maddsub_old_PP_11_addsub0000__or0009(260)] 
+Signal[ 9] [ 0: Product<0>(257) Product<0>(44)  ][ 1: (45)  ][ 2: (46)  ][ 3:  
+           Maddsub_old_PP_11_addsub0000__or0009(260)  ][ 4: (48)  ][ 5: (49)  ][ 6: _old_PP_8<7>(263)  ][ 7:  
+           Maddsub_old_PP_8_addsub0000__or0007(264)  ][ 8: Maddsub_old_PP_8_addsub0000__or0006(265)  ][ 9:  
+           N_PZ_46(266)  ][ 10: (50)  ][ 11: (51)  ][ 12: (52)  ][ 13: N_PZ_39(270)  ][ 14: N_PZ_155(271)  ] 
+           [ 15: _old_PP_5<3>(272)  ]
+----------------- B l o c k 8 ------------------
+PLApt(56/56), Fanin(25/38), Clk(0/3), Bct(0/4), Pin(3/8), Mcell(12/16)
+PLApts[56/56] 347 348 349 350 352 353 354 355 362 363 29 364 365 30 366 367 721 34 36 356 42 44 48 669 251 257 270 282 361 252 258 271 283 378 259 272 278 263 275 729 388 730 734 736 22 26 728 733 735 254 262 643 644 71 72 372
+Fanins[25] Maddsub_old_PP_12_addsub0000__or0010.n Maddsub_old_PP_12_addsub0000__or0011.n Maddsub_old_PP_12_addsub0000__or0012.n N_PZ_145.n N_PZ_198.n N_PZ_199.n N_PZ_200.n N_PZ_224.n N_PZ_28.n N_PZ_29.n N_PZ_41.n _old_PP_11<11>.n _old_PP_11<12>.n _old_PP_11<13>.n MP<0>.p MP<1>.p MP<2>.p MP<4>.p MP<5>.p MP<6>.p MP<7>.p MR<0>.p MR<1>.p MR<2>.p MR<7>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[12] [Product<11>(276),Product<11>(114)] [Product<1>(274),Product<1>(113)]  
+           [Product<2>(273),Product<2>(112)] [Maddsub_old_PP_12_addsub0000__or0011(288)]  
+           [Maddsub_old_PP_12_addsub0000__or0012(283)] [N_PZ_145(282)] [N_PZ_198(281)] [N_PZ_312(280)]  
+           [N_PZ_311(279)] [N_PZ_29(277)] [N_PZ_224(275)] [N_PZ_49(287)] 
+Signal[12] [ 0: Product<2>(273) Product<2>(112)  ][ 1: Product<1>(274) Product<1>(113)  ][ 2: N_PZ_224(275)  
+            ][ 3: Product<11>(276) Product<11>(114)  ][ 4: N_PZ_29(277)  ][ 5: (115)  ][ 6: N_PZ_311(279)  ] 
+           [ 7: N_PZ_312(280)  ][ 8: N_PZ_198(281)  ][ 9: N_PZ_145(282)  ][ 10:  
+           Maddsub_old_PP_12_addsub0000__or0012(283)  ][ 11: (116)  ][ 12: (117)  ][ 13: (118)  ][ 14:  
+           N_PZ_49(287) (119)  ][ 15: Maddsub_old_PP_12_addsub0000__or0011(288)  ]
+----------------- B l o c k 9 ------------------
+PLApt(55/56), Fanin(28/38), Clk(0/3), Bct(0/4), Pin(7/9), Mcell(8/16)
+PLApts[55/55] 260 261 265 266 273 274 276 277 382 383 377 385 386 397 400 722 285 723 727 731 732 735 737 279 243 244 618 619 631 636 640 245 379 389 390 632 641 240 605 606 620 621 633 637 642 247 248 604 607 646 647 648 649 650 651
+Fanins[28] Maddsub_old_PP_11_addsub0000__or0011.n Maddsub_old_PP_11_addsub0000__or0013.n Maddsub_old_PP_12_addsub0000__or0011.n Maddsub_old_PP_8_addsub0000__or0013.n N_PZ_145.n N_PZ_150.n N_PZ_191.n N_PZ_198.n N_PZ_199.n N_PZ_200.n N_PZ_224.n N_PZ_29.n N_PZ_41.n N_PZ_42.n N_PZ_49.n N_PZ_94.n _old_PP_11<12>.n _old_PP_11<13>.n _old_PP_11<14>.n _old_PP_11<6>.n _old_PP_8<12>.n _old_PP_8<13>.n _old_PP_8<14>.n MP<0>.p MP<5>.p MP<6>.p MP<7>.p MR<7>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[12] [Product<12>(289),Product<12>(111)] [Product<13>(290),Product<13>(110)]  
+           [Product<6>(291),Product<6>(107)] [MP<4>(106)] [MP<5>(105)] [MP<6>(104)] [MR<7>(103)]  
+           [_old_PP_11<12>(303)] [_old_PP_11<13>(301)] [_old_PP_11<14>(299)]  
+           [Maddsub_old_PP_11_addsub0000__or0013(298)] [_old_PP_11<15>(297)] 
+Signal[12] [ 0: Product<12>(289) Product<12>(111)  ][ 1: Product<13>(290) Product<13>(110)  ][ 2:  
+           Product<6>(291) Product<6>(107)  ][ 3: MP<4>(106)  ][ 4: MP<5>(105)  ][ 5: MP<6>(104)  ][ 6:  ] 
+           [ 7:  ][ 8: _old_PP_11<15>(297)  ][ 9: Maddsub_old_PP_11_addsub0000__or0013(298)  ][ 10:  
+           _old_PP_11<14>(299)  ][ 11: MR<7>(103)  ][ 12: _old_PP_11<13>(301)  ][ 13: (102)  ][ 14:  
+           _old_PP_11<12>(303)  ][ 15: (101)  ]
+----------------- B l o c k 10 ------------------
+PLApt(48/56), Fanin(31/38), Clk(0/3), Bct(0/4), Pin(7/8), Mcell(11/16)
+PLApts[48/48] 739 742 740 744 428 431 672 674 676 678 309 310 311 417 430 433 303 654 655 435 443 448 68 436 437 308 438 188 444 189 190 191 192 193 194 195 196 197 198 199 653 200 201 645 202 203 652 627
+Fanins[31] Maddsub_old_PP_11_addsub0000__or0008.n Maddsub_old_PP_12_addsub0000__or0007.n Maddsub_old_PP_12_addsub0000_or0008_xor0000.n Maddsub_old_PP_12_addsub0000_or0009_xor0000.n Maddsub_old_PP_8_addsub0000__or0002.n Maddsub_old_PP_8_addsub0000__or0004.n Maddsub_old_PP_8_addsub0000_or0003_xor0000.n Maddsub_old_PP_8_addsub0000_or0004_xor0000.n N_PZ_130.n N_PZ_16.n N_PZ_191.n N_PZ_198.n N_PZ_203.n N_PZ_236.n N_PZ_311.n N_PZ_312.n N_PZ_39.n N_PZ_41.n N_PZ_86.n _old_PP_11<14>.n _old_PP_11<15>.n _old_PP_11<8>.n _old_PP_11<9>.n _old_PP_5<3>.n _old_PP_5<4>.n _old_PP_8<9>.n MP<4>.p MP<5>.p MR<3>.p MR<4>.p MR<5>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [Product<14>(316),Product<14>(125)] [Product<15>(317),Product<15>(126)]  
+           [Product<3>(309),Product<3>(120)] [Product<8>(315),Product<8>(124)]  
+           [Product<9>(310),Product<9>(121)] [MR<3>(128)] [MR<4>(129)]  
+           [Maddsub_old_PP_12_addsub0000__or0009(314)] [N_PZ_236(313)] [N_PZ_86(312)] [_old_PP_8<4>(311)]  
+           [Maddsub_old_PP_8_addsub0000__or0004(308)] [_old_PP_11<9>(307)] 
+Signal[13] [ 0:  ][ 1:  ][ 2: _old_PP_11<9>(307)  ][ 3: Maddsub_old_PP_8_addsub0000__or0004(308)  ][ 4:  
+           Product<3>(309) Product<3>(120)  ][ 5: Product<9>(310) Product<9>(121)  ][ 6: _old_PP_8<4>(311)  ] 
+           [ 7: N_PZ_86(312)  ][ 8: N_PZ_236(313)  ][ 9: Maddsub_old_PP_12_addsub0000__or0009(314)  ][ 10:  
+           Product<8>(315) Product<8>(124)  ][ 11: Product<14>(316) Product<14>(125)  ][ 12:  
+           Product<15>(317) Product<15>(126)  ][ 13: MR<3>(128)  ][ 14: MR<4>(129)  ][ 15: (130)  ]
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

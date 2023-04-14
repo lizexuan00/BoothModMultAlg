@@ -1,0 +1,3 @@
+verilog work "BoothModMultAlg.v"
+verilog work "test_BoothModMultAlg.v"
+verilog work "D:/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/sasak/Desktop/workshop3/BoothModMultAlg/BoothModMultAlg.xst" -ofn "C:/Users/sasak/Desktop/workshop3/BoothModMultAlg/BoothModMultAlg.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 BoothModMultAlg.ngc BoothModMultAlg.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 BoothModMultAlg.ngd 
+XSLTProcess BoothModMultAlg_build.xml 
+tsim -intstyle ise BoothModMultAlg BoothModMultAlg.nga 
+taengine -intstyle ise -f BoothModMultAlg -w --format html1 -l BoothModMultAlg_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i BoothModMultAlg 

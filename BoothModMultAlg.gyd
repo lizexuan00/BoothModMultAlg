@@ -1,0 +1,93 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+MP<0> S:PIN13
+MP<1> S:PIN14
+MP<2> S:PIN26
+MP<3> S:PIN25
+MP<4> S:PIN106
+MP<5> S:PIN105
+MP<6> S:PIN104
+MP<7> S:PIN15
+MR<0> S:PIN24
+MR<1> S:PIN23
+MR<2> S:PIN143
+MR<3> S:PIN128
+MR<4> S:PIN129
+MR<5> S:PIN16
+MR<6> S:PIN2
+MR<7> S:PIN103
+Product<0> S:PIN44
+Product<1> S:PIN113
+Product<2> S:PIN112
+Product<3> S:PIN120
+Product<4> S:PIN12
+Product<5> S:PIN11
+Product<6> S:PIN107
+Product<7> S:PIN34
+Product<8> S:PIN124
+Product<9> S:PIN121
+Product<10> S:PIN35
+Product<11> S:PIN114
+Product<12> S:PIN111
+Product<13> S:PIN110
+Product<14> S:PIN125
+Product<15> S:PIN126
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_5 N_PZ_150
+PARTITION FB1_7 _old_PP_8<14> Maddsub_old_PP_8_addsub0000__or0002 Maddsub_old_PP_8_addsub0000_or0003_xor0000 Maddsub_old_PP_8_addsub0000_or0004_xor0000
+		 Maddsub_old_PP_8_addsub0000__or0005
+PARTITION FB1_15 _old_PP_8<5> N_PZ_197
+PARTITION FB2_2 N_PZ_131
+PARTITION FB2_6 Maddsub_old_PP_11_addsub0000__or0010 _old_PP_11<10> _old_PP_11<11> Maddsub_old_PP_11_addsub0000__or0011
+		 N_PZ_42 N_PZ_200 N_PZ_231 N_PZ_191
+		 N_PZ_130 N_PZ_203 N_PZ_199
+PARTITION FB3_8 N_PZ_141 Maddsub_old_PP_8_addsub0000__or0008 _old_PP_8<8> _old_PP_8<9>
+		 Maddsub_old_PP_8_addsub0000__or0009 _old_PP_5<8>
+PARTITION FB3_15 _old_PP_8<13>
+
+PARTITION FB4_1 Product<5> Product<4>
+PARTITION FB4_9 N_PZ_16 N_PZ_41 N_PZ_28
+PARTITION FB4_13 Maddsub_old_PP_11_addsub0000__or0006
+PARTITION FB4_15 _old_PP_11<6> Maddsub_old_PP_11_addsub0000__or0005
+PARTITION FB5_10 N_PZ_38 N_PZ_37 Maddsub_old_PP_11_addsub0000__or0008 _old_PP_11<8>
+		
+PARTITION FB5_15 Maddsub_old_PP_11_addsub0000__or0007 _old_PP_11<7>
+PARTITION FB6_1 Product<7> Product<10>
+PARTITION FB6_8 Maddsub_old_PP_12_addsub0000_or0009_xor0000 Maddsub_old_PP_12_addsub0000_or0008_xor0000 Maddsub_old_PP_12_addsub0000__or0007 Maddsub_old_PP_12_addsub0000__or0010
+		
+
+PARTITION FB7_1 _old_PP_5<6> N_PZ_94 _old_PP_5<7> _old_PP_8<11>
+		
+PARTITION FB7_7 Maddsub_old_PP_8_addsub0000__or0013 _old_PP_8<12> _old_PP_8<10> N_PZ_195
+		
+PARTITION FB7_14 _old_PP_8<6> _old_PP_5<4> _old_PP_5<5>
+PARTITION FB8_1 Product<0>
+PARTITION FB8_4 Maddsub_old_PP_11_addsub0000__or0009
+PARTITION FB8_7 _old_PP_8<7> Maddsub_old_PP_8_addsub0000__or0007 Maddsub_old_PP_8_addsub0000__or0006 N_PZ_46
+		
+PARTITION FB8_14 N_PZ_39 N_PZ_155 _old_PP_5<3>
+PARTITION FB9_1 Product<2> Product<1> N_PZ_224 Product<11>
+		 N_PZ_29
+PARTITION FB9_7 N_PZ_311 N_PZ_312 N_PZ_198 N_PZ_145
+		 Maddsub_old_PP_12_addsub0000__or0012
+PARTITION FB9_15 N_PZ_49 Maddsub_old_PP_12_addsub0000__or0011
+PARTITION FB10_1 Product<12> Product<13> Product<6>
+PARTITION FB10_9 _old_PP_11<15> Maddsub_old_PP_11_addsub0000__or0013 _old_PP_11<14>
+PARTITION FB10_13 _old_PP_11<13>
+PARTITION FB10_15 _old_PP_11<12>
+
+PARTITION FB11_3 _old_PP_11<9> Maddsub_old_PP_8_addsub0000__or0004 Product<3> Product<9>
+		 _old_PP_8<4> N_PZ_86 N_PZ_236 Maddsub_old_PP_12_addsub0000__or0009
+		 Product<8> Product<14> Product<15>
+
+
+
+
+
+
+
